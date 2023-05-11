@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+
+:root {
+  --shadow: rgba(0, 0, 0, 0.212);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Bebas Neue', cursive;
+}
+@media (max-width: 600px) {
+/* ===== All Pages ===== */
+.page {
+  height: 900px;
+  background-color: ghostwhite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ===== Home Page ===== */
+.home1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  margin: 0px 0px 150px 0px;
+  padding: 10px 0px 40px 0;
+  background-color: rgb(222, 204, 180);
+  box-shadow: 0px 0px 5px 5px var(--shadow);
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.home1-1 {
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home1-1 h1 {
+  font-size: 3em;
+}
+.home1-1 img {
+  position: fixed;
+  top: 1%;
+  right: 2%;
+  width: 7%;
+}
+.home1-1 img:hover {
+  cursor: pointer;
+}
+.home1-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.home1-2-1 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.home1-2-2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.home1-2-3 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.home-img-links {
+  width: 50%;
+  margin: auto;
+}
+.home-img-links:hover {
+  cursor: pointer;
+}
+#home-img-1 {
+  width: 70%;
+  border-radius: 200px;
+  border: 10px solid ghostwhite;
+  margin: auto;
+}
 }
