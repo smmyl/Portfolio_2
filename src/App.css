@@ -132,13 +132,90 @@ body {
   cursor: pointer;
 }
 /* ===== Resume Page ===== */
-/* ===== Skill Page =====?:
-
-
-
+/* ===== Skill Page ===== */
+.skill {
+  padding: 20px;
 }
-]
-`1qcde fvbgnmPage ===== */
+.skill h1 {
+  text-align: center;
+}
+.skill1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill1-img {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 10px;
+}
+.skill1 img {
+  width: 100%;
+  margin-bottom: -10px;
+}
+.skill1 h3 {
+  text-align: center;
+}
+.skill1-img img:hover {
+  width: 110%;
+}
+.bar-border {
+  width: 80%;
+  height: 1em;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-left: 50px;
+}
 
+.bar {
+  height: 1em;
+  border-radius: 10px;
+  background-color: black;
+  width: 50%;
+  text-align: center;
+  color: tan;
+}
+/* ===== Contact Page ===== */
+}
 
+#bar-c {
+  width: 95%;
+  animation: 2s ease-out slideInLeftc;
+}
+
+@keyframes slideInLeftc {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 90%;
+  }
+}
+
+#bar-s {
+  width: 90%;
+  animation: 2s ease-out slideInLefts;
+}
+
+@keyframes slideInLefts {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 90%;
+  }
+}
+
+#bar-t {
+  width: 100%;
+  animation: 2s ease-out slideInLeftt;
+}
+
+@keyframes slideInLeftt {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 100%;
+  }
 }
