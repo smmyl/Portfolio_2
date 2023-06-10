@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
   --shadow: rgba(0, 0, 0, 0.212);
@@ -100,16 +101,20 @@ body {
   cursor: pointer;
 }
 #home-img-1 {
-  width: 70%;
+  width: 60%;
   border-radius: 200px;
   border: 10px solid var(--coffee);
   position: absolute;
-  right: 11%;
+  right: 14%;
   bottom: -320px;
 }
 .home2 {
-  padding: 100px 20px 20px 20px;
+  padding: 100px 20px 40px 20px;
   background-color: var(--darkvanilla);
+  font-family: 'Open Sans', sans-serif;
+}
+.home2 p {
+  padding: 10px 5px 0px 30px;
 }
 
 /* ===== Project Page ===== */
@@ -207,7 +212,7 @@ body {
 }
 /* ===== Skill Page ===== */
 .skill {
-  padding: 0px 20px 20px 20px09;
+  padding: 0px 20px 20px 20px;
 }
 .skill h1 {
   text-align: center;
@@ -259,6 +264,9 @@ body {
 }
 .contact {
   padding: 20px;
+}
+.contact1 {
+  font-family: 'Open Sans', sans-serif;
 }
 .contact3 {
   display: flex;
