@@ -2,7 +2,11 @@
 
 :root {
   --shadow: rgba(0, 0, 0, 0.212);
-  --beach: rgb(222, 204, 180)
+  --darkblue: rgb(46, 62, 100);
+  --darkvanilla: rgb(209,193,155);
+  --coffee: rgb(100,84,46);
+  --darktanshadow: rgb(180, 165, 146);
+  --ghostwhite: rgb(221, 221, 230);
 }
 
 body {
@@ -22,15 +26,18 @@ body {
   margin: auto;
   margin: 50px 0px 0px 0px;
   padding: 10px 0px 40px 0px;
-  background-color: var(--beach);
+  background-color: var(--darkblue);
   box-shadow: 0px 0px 5px 5px var(--shadow);
   width: 100%;
+  position: relative;
+  height: 300px;
 }
 .home1-1 {
   text-align: center;
 }
 .home1-1 h1 {
   font-size: 3em;
+  color: ghostwhite;
 }
 .home1-1 img {
   position: relative;
@@ -50,20 +57,44 @@ body {
   display: flex;
   flex-direction: column;
   width: 25%;
+  position: relative;
 }
 .home1-2-2 {
   display: flex;
   flex-direction: column;
   width: 50%;
+  position: relative;
 }
 .home1-2-3 {
   display: flex;
   flex-direction: column;
   width: 25%;
+  position: relative;
 }
 .home-img-links {
   width: 50%;
   margin: auto;
+}
+#github {
+  position: absolute;
+  bottom: -180px;
+  right: 0px;
+}
+#linkedin {
+  position: absolute;
+  width: 40%;
+  right: -80px;
+}
+#mail {
+  position: absolute;
+  width: 45%;
+  left: -80px;
+}
+#resume {
+  position: absolute;
+  bottom: -200px;
+  width: 45%;
+  top: 80px;
 }
 .home-img-links:hover {
   cursor: pointer;
@@ -71,30 +102,43 @@ body {
 #home-img-1 {
   width: 70%;
   border-radius: 200px;
-  border: 10px solid ghostwhite;
-  margin: auto;
+  border: 10px solid var(--coffee);
+  position: absolute;
+  right: 11%;
+  bottom: -320px;
 }
+.home2 {
+  padding: 100px 20px 20px 20px;
+  background-color: var(--darkvanilla);
+}
+
 /* ===== Project Page ===== */
 .project {
-  padding: 20px;
+  padding: 0px 40px 20px 40px;
 }
 .project h1 {
   text-align: center;
 }
 .container {
   position: relative;
-  width: 60%;
+  width: 70%;
 }
 #container-right {
-  left: 38%;
+  left: 28%;
 }
 .project1 img {
   display: block;
   width: 100%;
   height: auto;
-  margin: 20px 0 20px 0;
-  border: 5px solid var(--beach);
+  margin: 40px 0 50px 0;
+  border: 2px solid var(--darkblue);
   border-radius: 15px;
+}
+.project1-img1 {
+  box-shadow: -4px 3px 2px 1px var(--darktanshadow);
+}
+.project1-img2 {
+  box-shadow: 4px 3px 2px 1px var(--darktanshadow);
 }
 .container:hover {
   cursor: pointer;
@@ -106,8 +150,8 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: tan;
-  border: 5px solid var(--beach);
+  background-color: var(--darkvanilla);
+  border: 2px solid var(--darkblue);
   border-radius: 15px;
   opacity: 0;
   transition: 1s ease;
@@ -124,17 +168,46 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.project2 {
+  float: right;
+}
+.project2-2 {
+  float: center;
+  padding-top: 5px;
+}
 .project2 h1 {
-  text-align: right;
   font-size: 1.5em;
 }
 .project2 h1:hover {
   cursor: pointer;
 }
+.project2-2 h1 {
+  font-size: 1.5em;
+  padding: 10px 0 20px 0;
+}
+.project2-2 h1:hover {
+  cursor: pointer;
+}
+.project3 {
+  width: 70%;
+  margin: auto;
+}
+.project3 p {
+  padding: 0 5px 15px 5px;
+}
+.project3 img {
+}
+
 /* ===== Resume Page ===== */
+.resume h1 {
+  text-align: center;
+}
+.resume1 {
+  display: none;
+}
 /* ===== Skill Page ===== */
 .skill {
-  padding: 20px;
+  padding: 0px 20px 20px 20px09;
 }
 .skill h1 {
   text-align: center;
@@ -142,6 +215,7 @@ body {
 .skill1 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .skill1-img {
   display: flex;
@@ -155,9 +229,13 @@ body {
 }
 .skill1 h3 {
   text-align: center;
+  opacity: 0;
 }
-.skill1-img img:hover {
-  width: 110%;
+.skill1-img:hover {
+  width: 25%;
+}
+.skill1-img:hover .skill1-h3{
+  opacity: 1;
 }
 .bar-border {
   width: 80%;
@@ -176,6 +254,9 @@ body {
   color: tan;
 }
 /* ===== Contact Page ===== */
+.contact h1 {
+  text-align: center;
+}
 }
 
 #bar-c {
