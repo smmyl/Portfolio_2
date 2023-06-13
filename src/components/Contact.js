@@ -15,14 +15,16 @@ const Contact = () => {
                         <form>
                             <label for='name1'>Name:</label><br/>
                             <input id='name1' type='text' name='name1'/><br/><br/>
+                            <label for='email1'>Email:</label><br/>
+                            <input id='email1' type='text' name-='email1' placeholder='optional'/><br/><br/>
                             <label for='comment'>Comment:</label><br/>
                             <textarea id='comment' rows='6' cols='50' name='comment'/><br/>
                             <input type='submit' value='submit'/>
                         </form>
                     </div>
                     <div class='contact3'>
-                        <p>Email:</p>
-                        <a href='mailto: sammy.liaop@gmail.com' target='_blank'><img id='mail2' class='home-img-links' src = 'https://img.icons8.com/?size=512&id=Cjuj2uISMdQ1&format=png'/></a>
+                        <p>Email: sammy.liaop@gmail.com</p>
+                        <a href='mailto: sammy.liaop@gmail.com' target='_blank'><img id='mail2' src = 'https://img.icons8.com/?size=512&id=Cjuj2uISMdQ1&format=png'/></a>
                     </div>
                 </div>
             </div>

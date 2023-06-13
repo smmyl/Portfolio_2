@@ -48,6 +48,7 @@ body {
 }
 .home1-1 img:hover {
   cursor: pointer;
+  width: 8%;
 }
 .home1-2 {
   display: flex;
@@ -81,15 +82,31 @@ body {
   bottom: -180px;
   right: 0px;
 }
+#githubp {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
 #linkedin {
   position: absolute;
   width: 40%;
   right: -80px;
 }
+#linkedinp {
+  position: absolute;
+  width: 40%;
+  left: 110px;
+  top: 10px;
+}
 #mail {
   position: absolute;
   width: 45%;
   left: -80px;
+}
+#mailp {
+  position: absolute;
+  right: 120px;
+  top: 10px;
 }
 #resume {
   position: absolute;
@@ -97,8 +114,21 @@ body {
   width: 45%;
   top: 80px;
 }
+#resumep {
+  position: absolute;
+  right: 30px;
+  top: 120px;
+}
 .home-img-links:hover {
   cursor: pointer;
+  animation: rotation 1s infinite linear;
+} 
+.linkp {
+  color: ghostwhite;
+  opacity: 0;
+}
+.linkhover:hover .linkp{
+  opacity: 1;
 }
 #home-img-1 {
   width: 60%;
@@ -114,11 +144,12 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .home2 p {
-  padding: 10px 5px 0px 30px;
+  padding: 0px 5px 0px 30px;
 }
 
 /* ===== Project Page ===== */
 .project {
+  margin-top: -20px;
   padding: 0px 40px 20px 40px;
 }
 .project h1 {
@@ -185,13 +216,18 @@ body {
 }
 .project2 h1:hover {
   cursor: pointer;
+  font-size: 1.6em;
 }
 .project2-2 h1 {
   font-size: 1.5em;
   padding: 10px 0 20px 0;
+  text-align: center;
+  width: 10%;
+  margin: auto;
 }
 .project2-2 h1:hover {
   cursor: pointer;
+  font-size: 1.7em;
 }
 .project3 {
   width: 70%;
@@ -212,6 +248,7 @@ body {
 }
 /* ===== Skill Page ===== */
 .skill {
+  margin-top: -20px;
   padding: 0px 20px 20px 20px;
 }
 .skill h1 {
@@ -264,6 +301,7 @@ body {
 }
 .contact {
   padding: 20px;
+  margin-top: -20px;
 }
 .contact1 {
   font-family: 'Open Sans', sans-serif;
@@ -277,8 +315,8 @@ body {
   bottom: 30%;
 }
 .contact3 img {
-  padding-left: 50px;
-  width: 20%;
+  padding-left: 180px;
+  width: 15%;
 }
 
 }
@@ -322,5 +360,14 @@ body {
   }
   100% {
       width: 100%;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }

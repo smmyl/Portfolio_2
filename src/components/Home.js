@@ -11,15 +11,35 @@ const Home = () => {
                     </div>
                     <div class='home1-2'>
                         <div class='home1-2-1'>
-                            <img id='linkedin' class='home-img-links' src='https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-512.png'/>
-                            <img id='github' class='home-img-links' src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png'/>
+                            <div class='linkhover'>
+                                <img id='linkedin' class='home-img-links' src='https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-512.png'/>
+                                <div class='linkp'>
+                                    <p id='linkedinp'>LinkedIn</p>
+                                </div>
+                            </div>
+                            <div class='linkhover'>
+                                <img id='github' class='home-img-links' src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png'/>
+                                <div class='linkp'>  
+                                    <p id='githubp'>GitHub</p>
+                                </div>
+                            </div>
                         </div>
                         <div class='home1-2-2'>
                             <img id='home-img-1' src='https://i.imgur.com/oCrGeWig.jpg'/>
                         </div>
                         <div class='home1-2-3'>
-                            <a href='mailto: sammy.liaop@gmail.com' target='_blank'><img id='mail' class='home-img-links' src = 'https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/mail-512.png'/></a>
-                            <a target='_blank'><img id='resume' class='home-img-links' src='https://cdn2.iconfinder.com/data/icons/business-and-finance-383/30/resume_business_cv_work_job_curriculum-_49-512.png'/></a>
+                            <div class='linkhover'>
+                                <a href='mailto: sammy.liaop@gmail.com' target='_blank'><img id='mail' class='home-img-links' src = 'https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/mail-512.png'/></a>
+                                <div class='linkp'>
+                                    <p id='mailp'>Email</p>
+                                </div>
+                            </div>
+                            <div class='linkhover'>
+                                <a target='_blank'><img id='resume' class='home-img-links' src='https://cdn2.iconfinder.com/data/icons/business-and-finance-383/30/resume_business_cv_work_job_curriculum-_49-512.png'/></a>
+                                <div class='linkp'>
+                                    <p id='resumep'>Resume</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
