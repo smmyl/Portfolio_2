@@ -143,6 +143,9 @@ body {
   background-color: var(--darkvanilla);
   font-family: 'Open Sans', sans-serif;
 }
+.home2 h2 {
+  text-align: center;
+}
 .home2 p {
   padding: 0px 5px 0px 30px;
 }
