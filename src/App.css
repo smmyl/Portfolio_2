@@ -44,6 +44,7 @@ body {
   position: absolute;
   left: 50px;
   width: 20%;
+  animation: .5s ease-out slideInDown;
 }
 .home1-1 img {
   position: absolute;
@@ -90,7 +91,7 @@ body {
 #github {
   position: absolute;
   left: 100%;
-  animation: bounce2 5s infinite;
+  animation: bounce2 10s infinite;
 }
 #githubp {
   position: absolute;
@@ -101,7 +102,7 @@ body {
   position: absolute;
   width: 40%;
   top: 15px;
-  animation: bounce1 5s infinite;
+  animation: bounce1 10s infinite;
 }
 #linkedinp {
   position: absolute;
@@ -114,7 +115,7 @@ body {
   width: 45%;
   right: 150%;
   top: 5px;
-  animation: bounce3 5s infinite;
+  animation: bounce3 10s infinite;
 }
 #mailp {
   position: absolute;
@@ -124,7 +125,7 @@ body {
 #resume {
   position: absolute;
   width: 45%;
-  animation: bounce4 5s infinite;
+  animation: bounce4 10s infinite;
 }
 #resumep {
   position: absolute;
@@ -164,6 +165,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .home2 h2 {
+  animation: 1s ease-out floatInLeft;
 }
 .home2 p {
   padding: 0px 5px 0px 30px;
@@ -752,13 +754,13 @@ body {
   0% { 
     top: 10px;
   }
-  13% {
+  25% {
     top: 10px;
   }
-  20% { 
+  30% { 
     top: -20px;
   }
-  33% {
+  35% {
     top: 10px;
   }
   100% { 
@@ -770,13 +772,13 @@ body {
   0% { 
     top: 0px;
   }
-  33% {
+  35% {
     top: 0px;
   }
   40% { 
     top: -20px;
   }
-  53% {
+  45% {
     top: 0px;
   }
   100%   { 
@@ -788,13 +790,13 @@ body {
   0% { 
     top: 0px;
   }
-  53% {
+  45% {
     top: 0px;
   }
-  60% { 
+  50% { 
     top: -20px;
   }
-  73% {
+  55% {
     top: 0px;
   }
   100%   { 
@@ -806,16 +808,34 @@ body {
   0% { 
     top: 0px;
   }
-  73% {
+  55% {
     top: 0px;
   }
-  80% { 
+  60% { 
     top: -20px;
   }
-  90% {
+  65% {
     top: 0px;
   }
   100%   { 
     top: 0px;
+  }
+}
+
+@keyframes floatInLeft {
+  0% {
+      transform: translateX(-50%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(0);
   }
 }
