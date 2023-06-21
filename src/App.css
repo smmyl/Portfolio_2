@@ -132,9 +132,8 @@ body {
   height: 10px;
   width: 168%;
   right: -20%;
-  bottom: 40px;
+  bottom: 60px;
   border-radius: 15px;
-  visibility: hidden;
 }
 .home-img-links:hover {
   cursor: pointer;
@@ -155,13 +154,11 @@ body {
   bottom: -220px;
 }
 .home2 {
-  padding: 100px 20px 40px 20px;
+  padding: 100px 100px 40px 100px;
   background-color: var(--darkvanilla);
   font-family: 'Open Sans', sans-serif;
 }
 .home2 h2 {
-  text-align: center;
-  padding-top: 10px;
 }
 .home2 p {
   padding: 0px 5px 0px 30px;
@@ -349,6 +346,7 @@ body {
 
 @media (max-width: 896px)and (min-width: 769px) {
   #home-line {
+    bottom: 40px;
     visibility: visible;
   }
   #githubp {
@@ -371,6 +369,9 @@ body {
     position: absolute;
     left: 45%;
     bottom: -65px;
+  }
+  #home-img-1 {
+    width: 150px;
   }
 }
 
