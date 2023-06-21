@@ -26,6 +26,8 @@ const Home = () => {
                         </div>
                         <div class='home1-2-2'>
                             <img id='home-img-1' src='https://i.imgur.com/oCrGeWig.jpg'/>
+                            <div id='home-line'>
+                            </div>
                         </div>
                         <div class='home1-2-3'>
                             <div class='linkhover'>

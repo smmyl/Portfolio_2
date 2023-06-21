@@ -48,8 +48,9 @@ body {
 .home1-1 img {
   position: absolute;
   margin: 0;
-  float: right;
-  width: 7%;
+  width: 50px;
+  right: 20px;
+  top: 10px;
 }
 .home1-1 img:hover {
   cursor: pointer;
@@ -91,26 +92,30 @@ body {
 }
 #githubp {
   position: absolute;
-  left: 115%;
+  left: 116%;
   bottom: -10px;
 }
 #linkedin {
   position: absolute;
   width: 40%;
-  top: 10px;
+  top: 15px;
 }
 #linkedinp {
   position: absolute;
   width: 40%;
-  
-}
+  bottom: -10px;
+  left: 8%;
+} 
 #mail {
   position: absolute;
   width: 45%;
   right: 150%;
+  top: 5px;
 }
 #mailp {
   position: absolute;
+  right: 166%;
+  top: -45px;
 }
 #resume {
   position: absolute;
@@ -118,10 +123,21 @@ body {
 }
 #resumep {
   position: absolute;
+  left: 10%;
+  bottom: 0px;
+}
+#home-line {
+  position: absolute;
+  background-color: rgba(248, 248, 255, 0.51);
+  height: 10px;
+  width: 168%;
+  right: -20%;
+  bottom: 40px;
+  border-radius: 15px;
+  visibility: hidden;
 }
 .home-img-links:hover {
   cursor: pointer;
-  animation: rotation 1s infinite linear;
 } 
 .linkp {
   color: ghostwhite;
@@ -329,6 +345,12 @@ body {
   width: 15%;
 }
 
+}
+
+@media (max-width: 896px)and (min-width: 769px) {
+  #home-line {
+    visibility: visible;
+  }
 }
 
 @media (max-width: 768px) {
