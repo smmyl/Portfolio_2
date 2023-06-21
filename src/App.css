@@ -14,7 +14,324 @@ body {
   font-family: 'Bebas Neue', cursive;
   background-color: ghostwhite;
 }
-@media (max-width: 600px) {
+@media (max-width: 1200px) and (min-width: 769px) {
+/* ===== All Pages ===== */
+.page {
+  margin-bottom: 100px;
+}
+
+/* ===== Home Page ===== */
+.home1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin: 50px 0px 0px 0px;
+  padding: 10px 0px 40px 0px;
+  background-color: var(--darkblue);
+  box-shadow: 0px 0px 5px 5px var(--shadow);
+  width: 100%;
+  position: relative;
+  height: 200px;
+}
+.home1-1 {
+  text-align: center;
+  position: relative;
+}
+.home1-1 h1 {
+  position: absolute;
+  font-size: 3em;
+  color: ghostwhite;
+  position: absolute;
+  left: 5%;
+  width: 20%;
+}
+.home1-1 img {
+  position: absolute;
+  margin: 0;
+  float: right;
+  width: 7%;
+}
+.home1-1 img:hover {
+  cursor: pointer;
+  width: 8%;
+}
+.home1-2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  left: 30%;
+  top: 120px;
+}
+.home1-2-1 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  position: relative;
+}
+.home1-2-2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+}
+.home1-2-3 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  position: relative;
+}
+.home-img-links {
+  width: 50%;
+  margin: auto;
+}
+#github {
+  position: absolute;
+  left: 100%;
+}
+#githubp {
+  position: absolute;
+  left: 115%;
+  bottom: -10px;
+}
+#linkedin {
+  position: absolute;
+  width: 40%;
+  top: 10px;
+}
+#linkedinp {
+  position: absolute;
+  width: 40%;
+  
+}
+#mail {
+  position: absolute;
+  width: 45%;
+  right: 150%;
+}
+#mailp {
+  position: absolute;
+}
+#resume {
+  position: absolute;
+  width: 45%;
+}
+#resumep {
+  position: absolute;
+}
+.home-img-links:hover {
+  cursor: pointer;
+  animation: rotation 1s infinite linear;
+} 
+.linkp {
+  color: ghostwhite;
+  opacity: 0;
+}
+.linkhover:hover .linkp{
+  opacity: 1;
+}
+#home-img-1 {
+  width: 50%;
+  border-radius: 200px;
+  border: 10px solid var(--coffee);
+  position: absolute;
+  left: -120%;
+  bottom: -220px;
+}
+.home2 {
+  padding: 100px 20px 40px 20px;
+  background-color: var(--darkvanilla);
+  font-family: 'Open Sans', sans-serif;
+}
+.home2 h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+.home2 p {
+  padding: 0px 5px 0px 30px;
+}
+
+/* ===== Project Page ===== */
+.project {
+  margin-top: -20px;
+  padding: 0px 40px 20px 40px;
+}
+.project h1 {
+  text-align: center;
+}
+.container {
+  position: relative;
+  width: 70%;
+}
+#container-right {
+  left: 28%;
+}
+.project1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 40px 0 50px 0;
+  border: 2px solid var(--darkblue);
+  border-radius: 15px;
+}
+.project1-img1 {
+  box-shadow: -4px 3px 2px 1px var(--darktanshadow);
+}
+.project1-img2 {
+  box-shadow: 4px 3px 2px 1px var(--darktanshadow);
+}
+.container:hover {
+  cursor: pointer;
+}
+.overlay1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--darkvanilla);
+  border: 2px solid var(--darkblue);
+  border-radius: 15px;
+  opacity: 0;
+  transition: 1s ease;
+}
+.container:hover .overlay1 {
+  opacity: 1;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.project2 {
+  float: right;
+}
+.project2-2 {
+  float: center;
+  padding-top: 5px;
+}
+.project2 h1 {
+  font-size: 1.5em;
+}
+.project2 h1:hover {
+  cursor: pointer;
+  font-size: 1.6em;
+}
+.project2-2 h1 {
+  font-size: 1.5em;
+  padding: 10px 0 20px 0;
+  text-align: center;
+  width: 10%;
+  margin: auto;
+}
+.project2-2 h1:hover {
+  cursor: pointer;
+  font-size: 1.7em;
+}
+.project3 {
+  width: 70%;
+  margin: auto;
+}
+.project3 p {
+  padding: 0 5px 15px 5px;
+}
+.project3 img {
+}
+
+/* ===== Resume Page ===== */
+.resume h1 {
+  text-align: center;
+}
+.resume1 {
+  display: none;
+}
+/* ===== Skill Page ===== */
+.skill {
+  margin-top: -20px;
+  padding: 0px 20px 20px 20px;
+}
+.skill h1 {
+  text-align: center;
+}
+.skill1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skill1-img {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 10px;
+}
+.skill1 img {
+  width: 100%;
+  margin-bottom: -10px;
+}
+.skill1 h3 {
+  text-align: center;
+  opacity: 0;
+}
+.skill1-img:hover {
+  width: 25%;
+}
+.skill1-img:hover .skill1-h3{
+  opacity: 1;
+}
+.bar-border {
+  width: 80%;
+  height: 1em;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-left: 50px;
+}
+
+.bar {
+  height: 1em;
+  border-radius: 10px;
+  background-color: black;
+  width: 50%;
+  text-align: center;
+  color: tan;
+}
+/* ===== Contact Page ===== */
+.contact h1 {
+  text-align: center;
+}
+.contact {
+  padding: 20px;
+  margin-top: -20px;
+}
+.contact1 {
+  font-family: 'Open Sans', sans-serif;
+}
+.contact2 {
+  margin: 30px 10% 30px 10%;
+}
+.contact3 {
+  display: flex;
+  position: relative;
+}
+.contact3 p {
+  position: absolute;
+  bottom: 30%;
+}
+.contact3 {
+  padding-top: 10px;
+}
+.contact3 img {
+  padding-left: 180px;
+  width: 15%;
+}
+
+}
+
+@media (max-width: 768px) {
 /* ===== All Pages ===== */
 .page {
   margin-bottom: 100px;
