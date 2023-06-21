@@ -48,9 +48,9 @@ body {
 .home1-1 img {
   position: absolute;
   margin: 0;
-  width: 50px;
-  right: 20px;
-  top: 10px;
+  width: 55px;
+  right: 10px;
+  top: 0px;
 }
 .home1-1 img:hover {
   cursor: pointer;
@@ -350,6 +350,27 @@ body {
 @media (max-width: 896px)and (min-width: 769px) {
   #home-line {
     visibility: visible;
+  }
+  #githubp {
+    position: absolute;
+    left: 150%;
+    bottom: -68px;
+  }
+  #linkedinp {
+    position: absolute;
+    width: 40%;
+    bottom: -68px;
+    left: 45%;
+  } 
+  #mailp {
+    position: absolute;
+    left: -45%;
+    top: 13px;
+  }
+  #resumep {
+    position: absolute;
+    left: 45%;
+    bottom: -65px;
   }
 }
 
