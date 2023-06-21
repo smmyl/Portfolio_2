@@ -42,7 +42,7 @@ body {
   font-size: 3em;
   color: ghostwhite;
   position: absolute;
-  left: 5%;
+  left: 50px;
   width: 20%;
 }
 .home1-1 img {
@@ -146,7 +146,7 @@ body {
   opacity: 1;
 }
 #home-img-1 {
-  width: 50%;
+  width: 180px;
   border-radius: 200px;
   border: 10px solid var(--coffee);
   position: absolute;
@@ -167,7 +167,7 @@ body {
 /* ===== Project Page ===== */
 .project {
   margin-top: -20px;
-  padding: 0px 40px 20px 40px;
+  padding: 0px 100px 20px 100px;
 }
 .project h1 {
   text-align: center;
