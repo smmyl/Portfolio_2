@@ -22,10 +22,6 @@ const Contact = () => {
                             <input type='submit' value='submit'/>
                         </form>
                     </div>
-                    <div class='contact3'>
-                        <p>Email: sammy.liaop@gmail.com</p>
-                        <a href='mailto: sammy.liaop@gmail.com' target='_blank'><img id='mail2' src = 'https://img.icons8.com/?size=512&id=Cjuj2uISMdQ1&format=png'/></a>
-                    </div>
                 </div>
             </div>
         </>
