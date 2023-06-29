@@ -50,6 +50,11 @@ const Project = () => {
                             <div class='overlay1'>
                                 <div class='text'>
                                     <h2>HomeCare Services</h2>
+                                    <p>Homecare services app that allows the elderly and handicapped to find assistance of any kind</p>
+                                    <li>React</li>
+                                    <li>Express.js</li>
+                                    <li>Node.js</li>
+                                    <li>MongoDB</li>
                                 </div>
                             </div>
                         </div>
