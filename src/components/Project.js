@@ -20,6 +20,13 @@ const Project = () => {
                             <div class='overlay1'>
                                 <div class='text'>
                                     <h2>EZPlanner</h2>
+                                    <p>Daily planner app that allows user to check for weather through third party APIs and create plans through scheduling</p>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Django</li>
+                                        <li>React</li>
+                                        <li>Tailwind</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -28,6 +35,13 @@ const Project = () => {
                             <div class='overlay1'>
                                 <div class='text'>
                                     <h2>SwiftShop</h2>
+                                    <p>Ecommerce app that allows someone to display items that they want to sell</p>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Django</li>
+                                        <li>React</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
