@@ -32,8 +32,12 @@ const App = () => {
       <Skill
         mode={mode}
       />
-      <Contact/>
-      <Footer/>
+      <Contact
+        mode={mode}
+      />
+      <Footer
+        mode={mode}
+      />
     </div>
   );
 }

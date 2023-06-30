@@ -10,7 +10,7 @@
   --ghostwhite: rgb(221, 221, 230);
   --darkdarkblue: rgb(25, 36, 63);
   --darkgray: rgb(108, 105, 105);
-  --darkgrayblue: rgb(43, 49, 65);
+  --darkgrayblue: rgb(53, 56, 66);
 }
 
 body {
@@ -45,14 +45,27 @@ body {
   position: relative;
   height: 200px;
 }
-.home1-1 {
+.home1-1l {
   text-align: center;
   position: relative;
 }
-.home1-1 h1 {
+.home1-1d {
+  text-align: center;
+  position: relative;
+}
+.home1-1l h1 {
   position: absolute;
   font-size: 3em;
   color: ghostwhite;
+  position: absolute;
+  left: 50px;
+  width: 20%;
+  animation: .5s ease-out slideInDown;
+}
+.home1-1d h1 {
+  position: absolute;
+  font-size: 3em;
+  color: rgb(162, 162, 162);
   position: absolute;
   left: 50px;
   width: 20%;
@@ -168,11 +181,18 @@ body {
 .home-img-links:hover {
   cursor: pointer;
 } 
-.linkp {
+.linkpl {
   color: ghostwhite;
   opacity: 0;
 }
-.linkhover:hover .linkp{
+.linkpd {
+  color: rgb(162, 162, 162);
+  opacity:0;
+}
+.linkhover:hover .linkpl{
+  opacity: 1;
+}
+.linkhover:hover .linkpd{
   opacity: 1;
 }
 #home-img-1 {
@@ -313,22 +333,13 @@ body {
 .project3 p {
   padding: 0 5px 15px 5px;
 }
-.project3 img {
-}
 
-/* ===== Resume Page ===== */
-.resume h1 {
-  text-align: center;
-}
-.resume1 {
-  display: none;
-}
 /* ===== Skill Page ===== */
 .skilll {
-  padding: 100px 20px 20px 20px;
+  padding: 100px 20px 100px 20px;
 }
 .skilld {
-  padding: 100px 20px 20px 20px;
+  padding: 100px 20px 100px 20px;
   background-color: var(--darkgray);
 }
 .skilll h1 {
@@ -382,13 +393,20 @@ body {
   color: tan;
 }
 /* ===== Contact Page ===== */
-.contact h1 {
+.contactl h1 {
   text-align: center;
 }
-.contact {
-  padding: 20px;
-  margin-top: -20px;
+.contactd h1 {
+  text-align: center;
+}
+.contactl {
+  padding: 50px 20px 20px 20px;
   background-color: var(--darkvanilla);
+  box-shadow: 0px 0px 5px 5px var(--shadow);
+}
+.contactd {
+  padding: 50px 20px 20px 20px;
+  background-color: var(--darkgrayblue);
   box-shadow: 0px 0px 5px 5px var(--shadow);
 }
 .contact1 {
@@ -396,38 +414,70 @@ body {
   margin: 0px 80px 0px 80px;
   font-weight: 600;
 }
-.contact2 {
+.contact2l {
   margin: 30px 150px 30px 150px;
 }
-input {
+.contact2l input {
   padding: 5px;
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
-input:focus {
+.contact2l input:focus {
   background-color: var(--ghostwhite);
 }
-input[type=name1] {
+.contact2l input[type=name1] {
   width: 150px;
 }
-input[type=email1] {
+.contact2l input[type=email1] {
   width: 200px;
 }
-input[type=submit] {
+.contact2l input[type=submit] {
   margin-top: 10px;
 }
-textarea[type=comment] {
+.contact2l textarea[type=comment] {
   border-radius: 15px;
   padding: 10px;
 }
-textarea:focus {
+.contact2l textarea:focus {
+  background-color: var(--ghostwhite);
+}
+.contact2d {
+  margin: 30px 150px 30px 150px;
+}
+.contact2d input {
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background-color: var(--ghostwhite);
+}
+.contact2d input[type=name1] {
+  width: 150px;
+}
+.contact2d input[type=email1] {
+  width: 200px;
+}
+.contact2d input[type=submit] {
+  margin-top: 10px;
+}
+.contact2d textarea[type=comment] {
+  border-radius: 15px;
+  padding: 10px;
+}
+.contact2d textarea {
   background-color: var(--ghostwhite);
 }
 /* ===== Footer Page ===== */
-.footer {
+.footerl {
   background-color: var(--darkblue);
-  margin: -100px 0 -100px 0;
+  margin: 0px 0 -100px 0;
+  padding: 20px 20px 20px 20px;
+  color: rgba(248, 248, 255, 0.748);
+}
+.footerd {
+  background-color: var(--darkdarkblue);
+  margin: 0px 0 -100px 0;
   padding: 20px 20px 20px 20px;
   color: rgba(248, 248, 255, 0.748);
 }
@@ -467,12 +517,8 @@ textarea:focus {
 
 @media (max-width: 768px) {
 /* ===== All Pages ===== */
-.page {
-  margin-bottom: 100px;
-}
-
 /* ===== Home Page ===== */
-.home1 {
+.home1l {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -484,22 +530,51 @@ textarea:focus {
   position: relative;
   height: 300px;
 }
-.home1-1 {
+.home1d {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin: 50px 0px 0px 0px;
+  padding: 10px 0px 40px 0px;
+  background-color: var(--darkdarkblue);
+  box-shadow: 0px 0px 5px 5px var(--shadow);
+  width: 100%;
+  position: relative;
+  height: 300px;
+}
+.home1-1l {
   text-align: center;
 }
-.home1-1 h1 {
+.home1-1l h1 {
   font-size: 3em;
   color: ghostwhite;
 }
-.home1-1 img {
+.home1-1l img {
   position: relative;
   margin: -120px 15px 0px 0px;
   float: right;
+  width: 6%;
+}
+.home1-1l img:hover {
+  cursor: pointer;
   width: 7%;
 }
-.home1-1 img:hover {
+.home1-1d {
+  text-align: center;
+}
+.home1-1d h1 {
+  font-size: 3em;
+  color: rgb(162, 162, 162);
+}
+.home1-1d img {
+  position: relative;
+  margin: -135px 0px 0px 0px;
+  float: right;
+  width: 11%;
+}
+.home1-1d img:hover {
   cursor: pointer;
-  width: 8%;
+  width: 12%;
 }
 .home1-2 {
   display: flex;
@@ -574,11 +649,18 @@ textarea:focus {
   cursor: pointer;
   animation: rotation 1s infinite linear;
 } 
-.linkp {
+.linkpl {
   color: ghostwhite;
   opacity: 0;
 }
-.linkhover:hover .linkp{
+.linkpd {
+  color: rgb(162, 162, 162);
+  opacity:0;
+}
+.linkhover:hover .linkpl{
+  opacity: 1;
+}
+.linkhover:hover .linkpd{
   opacity: 1;
 }
 #home-img-1 {
@@ -592,27 +674,47 @@ textarea:focus {
 #home-img-1:hover {
   cursor: pointer;
 }
-.home2 {
+.home2l {
   padding: 100px 20px 40px 20px;
   background-color: var(--darkvanilla);
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
-.home2 h2 {
+.home2l h2 {
   text-align: center;
   padding-top: 10px;
 }
-.home2 p {
+.home2l p {
+  padding: 0px 5px 0px 30px;
+}
+.home2d {
+  padding: 100px 20px 40px 20px;
+  background-color: var(--darkgray);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.home2d h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+.home2d p {
   padding: 0px 5px 0px 30px;
 }
 
 /* ===== Project Page ===== */
-.project {
-  margin-top: -20px;
-  padding: 0px 40px 20px 40px;
+.projectl {
+  padding: 80px 40px 100px 40px;
 }
-.project h1 {
+.projectl h1 {
   text-align: center;
+}
+.projectd {
+  padding: 80px 40px 100px 40px;
+  background-color: var(--darkgrayblue);
+}
+.projectd h1 {
+  text-align: center;
+  padding-bottom: 10px;
 }
 .container {
   position: relative;
@@ -707,19 +809,18 @@ textarea:focus {
 .project3 img {
 }
 
-/* ===== Resume Page ===== */
-.resume h1 {
+/* ===== Skill Page ===== */
+.skilll {
+  padding: 80px 20px 20px 20px;
+}
+.skilll h1 {
   text-align: center;
 }
-.resume1 {
-  display: none;
+.skilld {
+  padding: 80px 20px 20px 20px;
+  background-color: var(--darkgray);
 }
-/* ===== Skill Page ===== */
-.skill {
-  margin-top: -20px;
-  padding: 0px 20px 20px 20px;
-}
-.skill h1 {
+.skilld h1 {
   text-align: center;
 }
 .skill1 {
@@ -742,7 +843,7 @@ textarea:focus {
   opacity: 0;
 }
 .skill1-img:hover {
-  width: 25%;
+  width: 18%;
 }
 .skill1-img:hover .skill1-h3{
   opacity: 1;

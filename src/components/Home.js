@@ -10,7 +10,7 @@ const Home = (props) => {
         <>
             <div class='page'>
                 <div class={props.mode ? ('home1l'):('home1d')}>
-                    <div class='home1-1'>
+                    <div class={props.mode ?('home1-1l'):('home1-1d')}>
                         <h1>Sammy Liao</h1>
                         {props.mode ? (
                         <>
@@ -27,13 +27,13 @@ const Home = (props) => {
                         <div class='home1-2-1'>
                             <div class='linkhover'>
                                 <a target='_blank' href='https://www.linkedin.com/in/sammyliao/'><img id='linkedin' class='home-img-links' src='https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-512.png'/></a>
-                                <div class='linkp'>
+                                <div class={props.mode ? ('linkpl'):('linkpd')}>
                                     <p id='linkedinp'>LinkedIn</p>
                                 </div>
                             </div>
                             <div class='linkhover'>
                                 <a target='_blank' href='https://github.com/smmyl'><img id='github' class='home-img-links' src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png'/></a>
-                                <div class='linkp'>  
+                                <div class={props.mode ? ('linkpl'):('linkpd')}>  
                                     <p id='githubp'>GitHub</p>
                                 </div>
                             </div>
@@ -46,13 +46,13 @@ const Home = (props) => {
                         <div class='home1-2-3'>
                             <div class='linkhover'>
                                 <a href='mailto: sammy.liaop@gmail.com' target='_blank'><img id='mail' class='home-img-links' src = 'https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/mail-512.png'/></a>
-                                <div class='linkp'>
+                                <div class={props.mode ? ('linkpl'):('linkpd')}>
                                     <p id='mailp'>Email</p>
                                 </div>
                             </div>
                             <div class='linkhover'>
                                 <a target='_blank' href='https://docs.google.com/document/d/1Zb3-6ngS-rwF0QdVnuU6C7FbghOBHhb5lGcjaGrSR1U/edit?usp=sharing'><img id='resume' class='home-img-links' src='https://cdn2.iconfinder.com/data/icons/business-and-finance-383/30/resume_business_cv_work_job_curriculum-_49-512.png'/></a>
-                                <div class='linkp'>
+                                <div class={props.mode ? ('linkpl'):('linkpd')}>
                                     <p id='resumep'>Resume</p>
                                 </div>
                             </div>
