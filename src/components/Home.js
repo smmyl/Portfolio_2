@@ -18,13 +18,13 @@ const Home = () => {
                     <div class='home1-2'>
                         <div class='home1-2-1'>
                             <div class='linkhover'>
-                                <img id='linkedin' class='home-img-links' src='https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-512.png'/>
+                                <a target='_blank' href='https://www.linkedin.com/in/sammyliao/'><img id='linkedin' class='home-img-links' src='https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-512.png'/></a>
                                 <div class='linkp'>
                                     <p id='linkedinp'>LinkedIn</p>
                                 </div>
                             </div>
                             <div class='linkhover'>
-                                <img id='github' class='home-img-links' src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png'/>
+                                <a target='_blank' href='https://github.com/smmyl'><img id='github' class='home-img-links' src='https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png'/></a>
                                 <div class='linkp'>  
                                     <p id='githubp'>GitHub</p>
                                 </div>
@@ -43,7 +43,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div class='linkhover'>
-                                <a target='_blank'><img id='resume' class='home-img-links' src='https://cdn2.iconfinder.com/data/icons/business-and-finance-383/30/resume_business_cv_work_job_curriculum-_49-512.png'/></a>
+                                <a target='_blank' href='https://docs.google.com/document/d/1Zb3-6ngS-rwF0QdVnuU6C7FbghOBHhb5lGcjaGrSR1U/edit?usp=sharing'><img id='resume' class='home-img-links' src='https://cdn2.iconfinder.com/data/icons/business-and-finance-383/30/resume_business_cv_work_job_curriculum-_49-512.png'/></a>
                                 <div class='linkp'>
                                     <p id='resumep'>Resume</p>
                                 </div>
