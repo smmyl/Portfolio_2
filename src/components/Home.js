@@ -1,19 +1,27 @@
 import {useState, useRef, useEffect} from 'react'
 
-const Home = () => {
+const Home = (props) => {
     const home = useRef()
 
     const handleScrollHome = () => {
         home.current?.scrollIntoView({behavior: 'smooth'})
     }
-        
     return (
         <>
             <div class='page'>
                 <div class='home1'>
                     <div class='home1-1'>
                         <h1>Sammy Liao</h1>
-                        <img src='https://cdn-icons-png.flaticon.com/512/4623/4623236.png'/>
+                        {props.mode ? (
+                        <>
+                        <img onClick={props.toggleMode} class='dark' src='https://cdn-icons-png.flaticon.com/512/4623/4623236.png'/>
+                        </>
+                        ): (
+                        <>
+                        <img onClick={props.toggleMode} class='light' src='https://thenounproject.com/api/private/icons/4808961/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0'/>
+                        </>
+                        )
+                        }
                     </div>
                     <div class='home1-2'>
                         <div class='home1-2-1'>

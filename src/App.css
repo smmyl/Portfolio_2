@@ -46,16 +46,28 @@ body {
   width: 20%;
   animation: .5s ease-out slideInDown;
 }
-.home1-1 img {
+.dark{
   position: absolute;
   margin: 0;
-  width: 55px;
+  width: 50px;
   right: 10px;
   top: 0px;
 }
-.home1-1 img:hover {
+.dark:hover {
   cursor: pointer;
   width: 60px;
+  animation-duration: 0s;
+}
+.light{
+  position: absolute;
+  margin: 0;
+  width: 80px;
+  right: 0px;
+  top: -10px;
+}
+.light:hover {
+  cursor: pointer;
+  width: 90px;
   animation-duration: 0s;
 }
 .home1-2 {
@@ -750,7 +762,7 @@ input[type=submit] {
 textarea[type=comment] {
   border-radius: 15px;
   padding: 10px;
-  width: 90%;
+  width: 80%;
 }
 textarea:focus {
   background-color: var(--ghostwhite);

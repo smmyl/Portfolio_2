@@ -10,15 +10,25 @@ import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 
 const App = () => {
+  const [mode, setMode] = useState(true)
+
+  const toggleMode = () => {
+    setMode(!mode)
+  }
 
   useEffect(() => {
 
   }, [])
   return (
     <div>
-      <Home/>
+      <Home
+        mode={mode}
+        toggleMode={toggleMode}
+      />
       <NavBar/>
-      <Project/>
+      <Project
+        mode={mode}
+      />
       <Skill/>
       <Contact/>
       <Footer/>
