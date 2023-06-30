@@ -9,6 +9,8 @@
   --darktanshadow: rgb(180, 165, 146);
   --ghostwhite: rgb(221, 221, 230);
   --darkdarkblue: rgb(25, 36, 63);
+  --darkgray: rgb(108, 105, 105);
+  --darkgrayblue: rgb(43, 49, 65);
 }
 
 body {
@@ -192,7 +194,7 @@ body {
 }
 .home2d {
   padding: 100px 100px 40px 100px;
-  background-color: var(--coffee);
+  background-color: var(--darkgray);
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
@@ -214,14 +216,16 @@ body {
   padding: 100px 100px 20px 100px;
 }
 .projectd {
-  padding: 100px 100px 20px 100px;
-  background-color: rgb(78, 65, 37);
+  padding: 100px 100px 100px 100px;
+  background-color: var(--darkgrayblue);
 }
 .projectl h1 {
   text-align: center;
+  padding-bottom: 20px;
 }
 .projectd h1 {
   text-align: center;
+  padding-bottom: 20px;
 }
 .container {
   position: relative;
@@ -320,11 +324,17 @@ body {
   display: none;
 }
 /* ===== Skill Page ===== */
-.skill {
-  margin-top: -20px;
-  padding: 0px 20px 20px 20px;
+.skilll {
+  padding: 100px 20px 20px 20px;
 }
-.skill h1 {
+.skilld {
+  padding: 100px 20px 20px 20px;
+  background-color: var(--darkgray);
+}
+.skilll h1 {
+  text-align: center;
+}
+.skilld h1 {
   text-align: center;
 }
 .skill1 {

@@ -29,7 +29,9 @@ const App = () => {
       <Project
         mode={mode}
       />
-      <Skill/>
+      <Skill
+        mode={mode}
+      />
       <Contact/>
       <Footer/>
     </div>

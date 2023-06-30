@@ -1,10 +1,10 @@
 import {useState} from 'react'
 
-const Skill = () => {
+const Skill = (props) => {
     return (
         <>
             <div class='page'>
-                <div class='skill'>
+                <div class={props.mode ? ('skilll'):('skilld')}>
                     <h1>Skills</h1>
                     <div class='skill1'>
                         <div class='skill1-img'>
