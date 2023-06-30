@@ -811,13 +811,13 @@ body {
 
 /* ===== Skill Page ===== */
 .skilll {
-  padding: 80px 20px 20px 20px;
+  padding: 80px 20px 80px 20px;
 }
 .skilll h1 {
   text-align: center;
 }
 .skilld {
-  padding: 80px 20px 20px 20px;
+  padding: 80px 20px 80px 20px;
   background-color: var(--darkgray);
 }
 .skilld h1 {
@@ -865,51 +865,89 @@ body {
   color: tan;
 }
 /* ===== Contact Page ===== */
-.contact h1 {
+.contactl h1 {
   text-align: center;
 }
-.contact {
-  padding: 20px;
-  margin-top: -20px;
+.contactl {
+  padding: 50px 20px 20px 20px;
   background-color: var(--darkvanilla);
+}
+.contactd h1 {
+  text-align: center;
+}
+.contactd {
+  padding: 50px 20px 20px 20px;
+  background-color: var(--darkgrayblue);
 }
 .contact1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
-.contact2 {
+.contact2l {
   margin: 30px 10% 30px 10%;
 }
-input {
+.contact2l input {
   padding: 5px;
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
-input:focus {
+.contact2l input:focus {
   background-color: var(--ghostwhite);
 }
-input[type=name1] {
+.contact2l input[type=name1] {
   width: 150px;
 }
-input[type=email1] {
+.contact2l input[type=email1] {
   width: 200px;
 }
-input[type=submit] {
+.contact2l input[type=submit] {
   margin-top: 10px;
 }
-textarea[type=comment] {
+.contact2l textarea[type=comment] {
   border-radius: 15px;
   padding: 10px;
   width: 80%;
 }
-textarea:focus {
+.contact2l textarea:focus {
+  background-color: var(--ghostwhite);
+}
+.contact2d {
+  margin: 30px 10% 30px 10%;
+}
+.contact2d input {
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background-color: var(--ghostwhite);
+}
+.contact2d input[type=name1] {
+  width: 150px;
+}
+.contact2d input[type=email1] {
+  width: 200px;
+}
+.contact2d input[type=submit] {
+  margin-top: 10px;
+}
+.contact2d textarea[type=comment] {
+  border-radius: 15px;
+  padding: 10px;
+  width: 80%;
   background-color: var(--ghostwhite);
 }
 /* ===== Footer Page ===== */
-.footer {
+.footerl {
   background-color: var(--darkblue);
-  margin: -100px 0 -100px 0;
+  margin: 0px 0 -100px 0;
+  padding: 20px 20px 20px 20px;
+  color: rgba(248, 248, 255, 0.748);
+  box-shadow: 0px 0px 5px 5px var(--shadow);
+}
+.footerd {
+  background-color: var(--darkdarkblue);
+  margin: 0px 0 -100px 0;
   padding: 20px 20px 20px 20px;
   color: rgba(248, 248, 255, 0.748);
   box-shadow: 0px 0px 5px 5px var(--shadow);
