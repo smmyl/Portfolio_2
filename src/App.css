@@ -159,6 +159,9 @@ body {
   left: -120%;
   bottom: -220px;
 }
+#home-img-1:hover {
+  cursor: pointer;
+}
 .home2 {
   padding: 100px 100px 40px 100px;
   background-color: var(--darkvanilla);
@@ -536,6 +539,9 @@ textarea:focus {
   right: 14%;
   bottom: -320px;
 }
+#home-img-1:hover {
+  cursor: pointer;
+}
 .home2 {
   padding: 100px 20px 40px 20px;
   background-color: var(--darkvanilla);
@@ -744,6 +750,7 @@ input[type=submit] {
 textarea[type=comment] {
   border-radius: 15px;
   padding: 10px;
+  width: 90%;
 }
 textarea:focus {
   background-color: var(--ghostwhite);
