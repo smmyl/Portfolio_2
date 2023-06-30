@@ -14,11 +14,11 @@ const Contact = () => {
                     <div class='contact2'>
                         <form>
                             <label for='name1'>Name:</label><br/>
-                            <input id='name1' type='text' name='name1'/><br/><br/>
+                            <input id='name1' type='name1' name='name1'/><br/><br/>
                             <label for='email1'>Email:</label><br/>
-                            <input id='email1' type='text' name-='email1' placeholder='optional'/><br/><br/>
+                            <input id='email1' type='email1' name-='email1' placeholder='optional'/><br/><br/>
                             <label for='comment'>Comment:</label><br/>
-                            <textarea id='comment' rows='6' cols='50' name='comment'/><br/>
+                            <textarea id='comment' rows='6' cols='50' name='comment' type='comment'/><br/>
                             <input type='submit' value='submit'/>
                         </form>
                     </div>

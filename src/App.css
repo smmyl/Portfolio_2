@@ -570,7 +570,7 @@ body {
 .overlay1 p {
   font-family: 'Open Sans', sans-serif;
   font-size: .9em;
-  margin: 0 -50px 0 -50px;
+  margin: -15px -50px 0 -50px;
 }
 .overlay1 li {
   display: none;
@@ -693,6 +693,30 @@ body {
 .contact2 {
   margin: 30px 10% 30px 10%;
 }
+input {
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+input:focus {
+  background-color: var(--ghostwhite);
+}
+input[type=name1] {
+  width: 150px;
+}
+input[type=email1] {
+  width: 200px;
+}
+input[type=submit] {
+  margin-top: 10px;
+}
+textarea[type=comment] {
+  border-radius: 15px;
+  padding: 10px;
+}
+textarea:focus {
+  background-color: var(--ghostwhite);
+}
 /* ===== Footer Page ===== */
 .footer {
   background-color: var(--darkblue);
@@ -701,7 +725,6 @@ body {
   color: rgba(248, 248, 255, 0.748);
   box-shadow: 0px 0px 5px 5px var(--shadow);
 }
-
 }
 
 #bar-c {
