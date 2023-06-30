@@ -1,6 +1,12 @@
-import {useState} from 'react'
+import {useState, useRef, useEffect} from 'react'
 
 const Home = () => {
+    const home = useRef()
+
+    const handleScrollHome = () => {
+        home.current?.scrollIntoView({behavior: 'smooth'})
+    }
+        
     return (
         <>
             <div class='page'>
@@ -25,7 +31,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div class='home1-2-2'>
-                            <img id='home-img-1' src='https://i.imgur.com/oCrGeWig.jpg'/>
+                            <img onClick={handleScrollHome} id='home-img-1' src='https://i.imgur.com/oCrGeWig.jpg'/>
                             <div id='home-line'>
                             </div>
                         </div>
@@ -45,7 +51,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div class='home2'>
+                <div ref={home} class='home2'>
                     <h2>Hello!</h2>
                         <p>I am an aspiring software-engineer currently enrolled in General Assembly.<br/><br/> 
                         In 2015, I started off as a mechanical engineering student at Wentworth Institute of Technology. Although I liked the subject, I disliked how my creativity was bounded by the limits of physics. Due to my change of heart and uncertainty, I decided to step away for some clarity. <br/><br/>

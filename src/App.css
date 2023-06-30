@@ -163,6 +163,7 @@ body {
   padding: 100px 100px 40px 100px;
   background-color: var(--darkvanilla);
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .home2 h2 {
   animation: 1s ease-out floatInLeft;
@@ -340,9 +341,35 @@ body {
 .contact1 {
   font-family: 'Open Sans', sans-serif;
   margin: 0px 80px 0px 80px;
+  font-weight: 600;
 }
 .contact2 {
   margin: 30px 150px 30px 150px;
+}
+input {
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+input:focus {
+  background-color: var(--ghostwhite);
+}
+input[type=name1] {
+  width: 150px;
+}
+input[type=email1] {
+  width: 200px;
+}
+input[type=submit] {
+  margin-top: 10px;
+}
+textarea[type=comment] {
+  border-radius: 15px;
+  padding: 10px;
+}
+textarea:focus {
+  background-color: var(--ghostwhite);
 }
 /* ===== Footer Page ===== */
 .footer {
@@ -513,6 +540,7 @@ body {
   padding: 100px 20px 40px 20px;
   background-color: var(--darkvanilla);
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .home2 h2 {
   text-align: center;
@@ -569,6 +597,7 @@ body {
 }
 .overlay1 p {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: .9em;
   margin: -15px -50px 0 -50px;
 }
@@ -689,6 +718,7 @@ body {
 }
 .contact1 {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .contact2 {
   margin: 30px 10% 30px 10%;
@@ -697,6 +727,7 @@ input {
   padding: 5px;
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 input:focus {
   background-color: var(--ghostwhite);

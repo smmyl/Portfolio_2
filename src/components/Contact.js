@@ -19,7 +19,7 @@ const Contact = () => {
                             <input id='email1' type='email1' name-='email1' placeholder='optional'/><br/><br/>
                             <label for='comment'>Comment:</label><br/>
                             <textarea id='comment' rows='6' cols='50' name='comment' type='comment'/><br/>
-                            <input type='submit' value='submit'/>
+                            <input type='submit' value='Submit'/>
                         </form>
                     </div>
                 </div>
