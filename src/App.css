@@ -8,6 +8,7 @@
   --coffee: rgb(100,84,46);
   --darktanshadow: rgb(180, 165, 146);
   --ghostwhite: rgb(221, 221, 230);
+  --darkdarkblue: rgb(25, 36, 63);
 }
 
 body {
@@ -16,18 +17,27 @@ body {
 }
 @media (max-width: 1200px) and (min-width: 769px) {
 /* ===== All Pages ===== */
-.page {
-  margin-bottom: 100px;
-}
 
 /* ===== Home Page ===== */
-.home1 {
+.home1l {
   display: flex;
   flex-direction: column;
   margin: auto;
   margin: 50px 0px 0px 0px;
   padding: 10px 0px 40px 0px;
   background-color: var(--darkblue);
+  box-shadow: 0px 0px 5px 5px var(--shadow);
+  width: 100%;
+  position: relative;
+  height: 200px;
+}
+.home1d {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin: 50px 0px 0px 0px;
+  padding: 10px 0px 40px 0px;
+  background-color: var(--darkdarkblue);
   box-shadow: 0px 0px 5px 5px var(--shadow);
   width: 100%;
   position: relative;
@@ -174,25 +184,43 @@ body {
 #home-img-1:hover {
   cursor: pointer;
 }
-.home2 {
+.home2l {
   padding: 100px 100px 40px 100px;
   background-color: var(--darkvanilla);
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
-.home2 h2 {
+.home2d {
+  padding: 100px 100px 40px 100px;
+  background-color: var(--coffee);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.home2l h2 {
   animation: 1s ease-out floatInLeft;
 }
-.home2 p {
+.home2l p {
+  padding: 0px 5px 0px 30px;
+}
+.home2d h2 {
+  animation: 1s ease-out floatInLeft;
+}
+.home2d p {
   padding: 0px 5px 0px 30px;
 }
 
 /* ===== Project Page ===== */
-.project {
-  margin-top: -20px;
-  padding: 0px 100px 20px 100px;
+.projectl {
+  padding: 100px 100px 20px 100px;
 }
-.project h1 {
+.projectd {
+  padding: 100px 100px 20px 100px;
+  background-color: rgb(78, 65, 37);
+}
+.projectl h1 {
+  text-align: center;
+}
+.projectd h1 {
   text-align: center;
 }
 .container {

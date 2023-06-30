@@ -9,7 +9,7 @@ const Home = (props) => {
     return (
         <>
             <div class='page'>
-                <div class='home1'>
+                <div class={props.mode ? ('home1l'):('home1d')}>
                     <div class='home1-1'>
                         <h1>Sammy Liao</h1>
                         {props.mode ? (
@@ -59,7 +59,7 @@ const Home = (props) => {
                         </div>
                     </div>
                 </div>
-                <div ref={home} class='home2'>
+                <div ref={home} class={props.mode ? ('home2l'):('home2d')}>
                     <h2>Hello!</h2>
                         <p>I am an aspiring software-engineer currently enrolled in General Assembly.<br/><br/> 
                         In 2015, I started off as a mechanical engineering student at Wentworth Institute of Technology. Although I liked the subject, I disliked how my creativity was bounded by the limits of physics. Due to my change of heart and uncertainty, I decided to step away for some clarity. <br/><br/>

@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {Carousel} from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-const Project = () => {
+const Project = (props) => {
     const [project2h1, setProject2h1] = useState(true)
     const [project2, setProject2] = useState(true)
 
@@ -12,7 +12,7 @@ const Project = () => {
     return (
         <>
             <div class='page'>
-                <div class='project'>
+                <div class={props.mode ? ('projectl'):('projectd')}>
                     <h1>Projects</h1>
                     <div class='project1'>
                         <div class='container'>
