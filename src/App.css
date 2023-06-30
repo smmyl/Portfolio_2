@@ -11,6 +11,7 @@
   --darkdarkblue: rgb(25, 36, 63);
   --darkgray: rgb(108, 105, 105);
   --darkgrayblue: rgb(53, 56, 66);
+  --lightdarkgray: rgb(162, 162, 162);
 }
 
 body {
@@ -65,7 +66,7 @@ body {
 .home1-1d h1 {
   position: absolute;
   font-size: 3em;
-  color: rgb(162, 162, 162);
+  color: var(--lightdarkgray);
   position: absolute;
   left: 50px;
   width: 20%;
@@ -186,7 +187,7 @@ body {
   opacity: 0;
 }
 .linkpd {
-  color: rgb(162, 162, 162);
+  color: var(--lightdarkgray);
   opacity:0;
 }
 .linkhover:hover .linkpl{
@@ -246,6 +247,7 @@ body {
 .projectd h1 {
   text-align: center;
   padding-bottom: 20px;
+  color: var(--lightdarkgray)
 }
 .container {
   position: relative;
@@ -262,16 +264,22 @@ body {
   border: 2px solid var(--darkblue);
   border-radius: 15px;
 }
-.project1-img1 {
+.project1-img1l {
   box-shadow: -4px 3px 2px 1px var(--darktanshadow);
 }
-.project1-img2 {
+.project1-img2l {
   box-shadow: 4px 3px 2px 1px var(--darktanshadow);
+}
+.project1-img1d {
+  box-shadow: -4px 3px 2px 1px var(--darkdarkblue);
+}
+.project1-img2d {
+  box-shadow: 4px 3px 2px 1px var(--darkdarkblue);
 }
 .container:hover {
   cursor: pointer;
 }
-.overlay1 {
+.overlay1l {
   position: absolute;
   top: 0;
   right: 0;
@@ -284,12 +292,32 @@ body {
   opacity: 0;
   transition: 1s ease;
 }
-.overlay1 li {
+.overlay1l li {
+  text-align: left;
+  margin: 0 0 0 35%;
+}
+.overlay1d {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--darkblue);
+  border: 2px solid var(--darkgrayblue);
+  border-radius: 15px;
+  opacity: 0;
+  transition: 1s ease;
+}
+.overlay1d li {
   text-align: left;
   margin: 0 0 0 35%;
 }
 
-.container:hover .overlay1 {
+.container:hover .overlay1l {
+  opacity: 1;
+}
+.container:hover .overlay1d {
   opacity: 1;
 }
 .text {
@@ -383,8 +411,7 @@ body {
   border: 2px solid black;
   margin-left: 70px;
 }
-
-.bar {
+.barl {
   height: 1em;
   border-radius: 10px;
   background-color: black;
@@ -392,12 +419,21 @@ body {
   text-align: center;
   color: tan;
 }
+.bard {
+  height: 1em;
+  border-radius: 10px;
+  background-color: black;
+  width: 50%;
+  text-align: center;
+  color: var(--lightdarkgray);
+}
 /* ===== Contact Page ===== */
 .contactl h1 {
   text-align: center;
 }
 .contactd h1 {
   text-align: center;
+  color: var(--lightdarkgray)
 }
 .contactl {
   padding: 50px 20px 20px 20px;
@@ -564,7 +600,7 @@ body {
 }
 .home1-1d h1 {
   font-size: 3em;
-  color: rgb(162, 162, 162);
+  color: var(--lightdarkgray);
 }
 .home1-1d img {
   position: relative;
@@ -654,7 +690,7 @@ body {
   opacity: 0;
 }
 .linkpd {
-  color: rgb(162, 162, 162);
+  color: var(--lightdarkgray);
   opacity:0;
 }
 .linkhover:hover .linkpl{
@@ -715,6 +751,7 @@ body {
 .projectd h1 {
   text-align: center;
   padding-bottom: 10px;
+  color: var(--lightdarkgray)
 }
 .container {
   position: relative;
@@ -731,16 +768,22 @@ body {
   border: 2px solid var(--darkblue);
   border-radius: 15px;
 }
-.project1-img1 {
+.project1-img1l {
   box-shadow: -4px 3px 2px 1px var(--darktanshadow);
 }
-.project1-img2 {
+.project1-img2l {
   box-shadow: 4px 3px 2px 1px var(--darktanshadow);
+}
+.project1-img1d {
+  box-shadow: -4px 3px 2px 1px var(--darkdarkblue);
+}
+.project1-img2d {
+  box-shadow: 4px 3px 2px 1px var(--darkdarkblue);
 }
 .container:hover {
   cursor: pointer;
 }
-.overlay1 {
+.overlay1l {
   position: absolute;
   top: 0;
   right: 0;
@@ -753,16 +796,41 @@ body {
   opacity: 0;
   transition: 1s ease;
 }
-.overlay1 p {
+.overlay1l p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: .9em;
   margin: -15px -50px 0 -50px;
 }
-.overlay1 li {
+.overlay1l li {
   display: none;
 }
-.container:hover .overlay1 {
+.overlay1d {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--darkblue);
+  border: 2px solid var(--darkdarkblue);
+  border-radius: 15px;
+  opacity: 0;
+  transition: 1s ease;
+}
+.overlay1d p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: .9em;
+  margin: -15px -50px 0 -50px;
+}
+.overlay1d li {
+  display: none;
+}
+.container:hover .overlay1l {
+  opacity: 1;
+}
+.container:hover .overlay1d {
   opacity: 1;
 }
 .text {
@@ -792,7 +860,7 @@ body {
   font-size: 1.5em;
   padding: 10px 0 20px 0;
   text-align: center;
-  width: 10%;
+  width: 25%;
   margin: auto;
 }
 .project2-2 h1:hover {
@@ -811,10 +879,11 @@ body {
 
 /* ===== Skill Page ===== */
 .skilll {
-  padding: 80px 20px 80px 20px;
+  padding: 50px 20px 80px 20px;
 }
 .skilll h1 {
   text-align: center;
+  padding-bottom: 20px;
 }
 .skilld {
   padding: 80px 20px 80px 20px;
@@ -822,6 +891,7 @@ body {
 }
 .skilld h1 {
   text-align: center;
+  padding-bottom: 20px;
 }
 .skill1 {
   display: flex;
@@ -856,13 +926,21 @@ body {
   margin-left: 50px;
 }
 
-.bar {
+.barl {
   height: 1em;
   border-radius: 10px;
   background-color: black;
   width: 50%;
   text-align: center;
   color: tan;
+}
+.bard {
+  height: 1em;
+  border-radius: 10px;
+  background-color: black;
+  width: 50%;
+  text-align: center;
+  color: var(--lightdarkgray);
 }
 /* ===== Contact Page ===== */
 .contactl h1 {
@@ -874,6 +952,7 @@ body {
 }
 .contactd h1 {
   text-align: center;
+  color: var(--lightdarkgray)
 }
 .contactd {
   padding: 50px 20px 20px 20px;
