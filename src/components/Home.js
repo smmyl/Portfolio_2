@@ -61,10 +61,10 @@ const Home = (props) => {
                 </div>
                 <div ref={home} class={props.mode ? ('home2l'):('home2d')}>
                     <h2>Hello!</h2>
-                        <p>I am an aspiring software-engineer currently enrolled in General Assembly.<br/><br/> 
-                        In 2015, I started off as a mechanical engineering student at Wentworth Institute of Technology. Although I liked the subject, I disliked how my creativity was bounded by the limits of physics. Due to my change of heart and uncertainty, I decided to step away for some clarity. <br/><br/>
-                        During this break, I decided to work in customer service - something I would never regret. Taking the role of an assistant manager, I learned how to work better under pressure. I took away core skills such as communication, efficiency, and time-management.<br/><br/>
-                        My time away taught me that my passion for creating things never dissapeared. As a result, I began to speak with advisors and counselors who collectively recommended me to try software-engineering. As the world of technology only grows more complex and complicated, the bounds of creativity are nonexistent. Using the skills I've gained throughout my journey, I hope to create something that can assist or make someones's life easier in any way.
+                        <p>I am a software-engineer who recently graduated from General Assembly<br/><br/> 
+                        In 2015, I started off as a mechanical engineering student at the Wentworth Institute of Technology. I enjoyed the field for three years but because of uncontrollable circumstances, I had to take a break from learning. <br/><br/>
+                        During this break, I decided to work in customer service - something I would never regret. Taking the role of an assistant manager, I learned how to work better under pressure. The service industry looks easy from the outside, but I found that it took a lot for a restaurant to function: worker management, customer management, inventory, unforeseeable problems, and etc. I took away core skills such as communication, efficiency, and time-management.<br/><br/>
+                        My time away taught me that my passion for creating things never dissapeared. As a result, I began to speak with advisors and counselors who collectively recommended me to try software-engineering. Different from mechanical, software allows you to see results instanteously on a screen in front of you! I always found that so fascinating. Using the skills I've gained throughout my journey, I hope to create something that can assist people. I have always enjoyed working with other people so whether that I can help people access a site more easily or simply make a site look more appealing is something I will strive to do.
                         </p>
                 </div>
             </div>
