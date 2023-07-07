@@ -4,10 +4,10 @@ import axios from 'axios'
 import Home from './components/Home'
 import Project from './components/Project'
 import Skill from './components/Skill'
-import Resume from './components/Resume'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
+import About from './components/About'
 
 const App = () => {
   const [mode, setMode] = useState(true)
@@ -32,6 +32,7 @@ const App = () => {
       <Skill
         mode={mode}
       />
+      <About/>
       <Contact
         mode={mode}
       />
