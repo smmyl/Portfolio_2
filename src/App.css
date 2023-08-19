@@ -3,10 +3,9 @@
 
 :root {
   --shadow: rgba(0, 0, 0, 0.212);
-  --darkblue: #5790AB;
-  --darkvanilla: #edf0f4;
-  --coffee: #072D44;
-  --darktanshadow: #6c6d77;
+  --homebackground: #5790AB;
+  --bodybackground1: #edf0f4;
+  --profileborder: #072D44;
   --ghostwhite: rgb(221, 221, 230);
   --darkdarkblue: rgb(25, 36, 63);
   --darkgray: rgb(108, 105, 105);
@@ -15,6 +14,7 @@
   --projectborder: #474853;
   --barcolor: #5790AB;
   --barborder: #5790AB;
+  --projectbordershadow: #6c6d77;
   --barfont: #072D44: 
 }
 
@@ -35,7 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px 0px 60px 0px;
-    background-color: var(--darkblue);
+    background-color: var(--homebackground);
     box-shadow: 0px 0px 5px 5px var(--shadow);
     position: relative;
     height: 200px;
@@ -202,7 +202,7 @@ body {
   #home-img-1 {
     width: 180px;
     border-radius: 200px;
-    border: 10px solid var(--coffee);
+    border: 10px solid var(--profileborder);
     position: absolute;
     left: -120%;
     bottom: -220px;
@@ -213,7 +213,7 @@ body {
   .home2l {
     margin-top: -5px;
     padding: 100px 100px 40px 100px;
-    background-color: var(--darkvanilla);
+    background-color: var(--bodybackground1);
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     border-radius: 15px;
@@ -288,10 +288,10 @@ body {
     border-radius: 15px;
   }
   .project1-img1l {
-    box-shadow: -4px 3px 2px 1px var(--darktanshadow);
+    box-shadow: -4px 3px 2px 1px var(--projectbordershadow);
   }
   .project1-img2l {
-    box-shadow: 4px 3px 2px 1px var(--darktanshadow);
+    box-shadow: 4px 3px 2px 1px var(--projectbordershadow);
   }
   .project1-img1d {
     box-shadow: -4px 3px 2px 1px var(--darkdarkblue);
@@ -309,7 +309,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--darkvanilla);
+    background-color: var(--bodybackground1);
     border: 3px solid var(--projectborder);
     border-radius: 15px;
     opacity: 0;
@@ -326,7 +326,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--darkblue);
+    background-color: var(--homebackground);
     border: 2px solid var(--darkgrayblue);
     border-radius: 15px;
     opacity: 0;
@@ -466,7 +466,7 @@ body {
   .contactl {
     margin-top: -5px;
     padding: 50px 20px 20px 20px;
-    background-color: var(--darkvanilla);
+    background-color: var(--bodybackground1);
     box-shadow: 0px 0px 5px 5px var(--shadow);
     width: 86%;
     margin-left: 5.75%;
@@ -548,7 +548,7 @@ body {
   .footerl {
     z-index: 0;
     position: relative;
-    background-color: var(--darkblue);
+    background-color: var(--homebackground);
     margin: 5px 0 -100px 0;
     padding: 25px 20px 20px 20px;
     color: rgba(248, 248, 255, 0.748);
@@ -573,7 +573,7 @@ body {
   margin: auto;
   margin: 0px 0px 0px 0px;
   padding: 10px 0px 40px 0px;
-  background-color: var(--darkblue);
+  background-color: var(--homebackground);
   box-shadow: 0px 0px 5px 5px var(--shadow);
   width: 100%;
   position: relative;
@@ -744,7 +744,7 @@ body {
 #home-img-1 {
   width: 180px;
   border-radius: 200px;
-  border: 10px solid var(--coffee);
+  border: 10px solid var(--profileborder);
   position: absolute;
   left: -120%;
   bottom: -220px;
@@ -754,7 +754,7 @@ body {
 }
 .home2l {
   padding: 100px 100px 40px 100px;
-  background-color: var(--darkvanilla);
+  background-color: var(--bodybackground1);
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
@@ -817,10 +817,10 @@ body {
   border-radius: 15px;
 }
 .project1-img1l {
-  box-shadow: -4px 3px 2px 1px var(--darktanshadow);
+  box-shadow: -4px 3px 2px 1px var(--projectbordershadow);
 }
 .project1-img2l {
-  box-shadow: 4px 3px 2px 1px var(--darktanshadow);
+  box-shadow: 4px 3px 2px 1px var(--projectbordershadow);
 }
 .project1-img1d {
   box-shadow: -4px 3px 2px 1px var(--darkdarkblue);
@@ -838,7 +838,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--darkvanilla);
+  background-color: var(--bodybackground1);
   border: 3px solid var(--projectborder);
   border-radius: 15px;
   opacity: 0;
@@ -855,7 +855,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--darkblue);
+  background-color: var(--homebackground);
   border: 2px solid var(--darkgrayblue);
   border-radius: 15px;
   opacity: 0;
@@ -990,7 +990,7 @@ body {
 }
 .contactl {
   padding: 50px 20px 20px 20px;
-  background-color: var(--darkvanilla);
+  background-color: var(--bodybackground1);
   box-shadow: 0px 0px 5px 5px var(--shadow);
 }
 .contactd {
@@ -1059,7 +1059,7 @@ body {
 }
 /* ===== Footer Page ===== */
 .footerl {
-  background-color: var(--darkblue);
+  background-color: var(--homebackground);
   margin: 0px 0 -100px 0;
   padding: 20px 20px 20px 20px;
   color: rgba(248, 248, 255, 0.748);
@@ -1113,7 +1113,7 @@ body {
   margin: auto;
   margin: 0px 0px 0px 0px;
   padding: 10px 0px 40px 0px;
-  background-color: var(--darkblue);
+  background-color: var(--homebackground);
   box-shadow: 0px 0px 5px 5px var(--shadow);
   width: 100%;
   position: relative;
@@ -1255,7 +1255,7 @@ body {
 #home-img-1 {
   width: 60%;
   border-radius: 200px;
-  border: 10px solid var(--coffee);
+  border: 10px solid var(--profileborder);
   position: absolute;
   right: 14%;
   bottom: -320px;
@@ -1265,7 +1265,7 @@ body {
 }
 .home2l {
   padding: 100px 20px 40px 20px;
-  background-color: var(--darkvanilla);
+  background-color: var(--bodybackground1);
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
@@ -1329,10 +1329,10 @@ body {
   border-radius: 15px;
 }
 .project1-img1l {
-  box-shadow: -4px 3px 2px 1px var(--darktanshadow);
+  box-shadow: -4px 3px 2px 1px var(--projectbordershadow);
 }
 .project1-img2l {
-  box-shadow: 4px 3px 2px 1px var(--darktanshadow);
+  box-shadow: 4px 3px 2px 1px var(--projectbordershadow);
 }
 .project1-img1d {
   box-shadow: -4px 3px 2px 1px var(--darkdarkblue);
@@ -1350,7 +1350,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--darkvanilla);
+  background-color: var(--bodybackground1);
   border: 3px solid var(--projectborder);
   border-radius: 15px;
   opacity: 0;
@@ -1372,7 +1372,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--darkblue);
+  background-color: var(--homebackground);
   border: 2px solid var(--darkdarkblue);
   border-radius: 15px;
   opacity: 0;
@@ -1509,7 +1509,7 @@ body {
 }
 .contactl {
   padding: 50px 20px 20px 20px;
-  background-color: var(--darkvanilla);
+  background-color: var(--bodybackground1);
   box-shadow: 0px 0px 5px 5px var(--shadow);
 }
 .contactd h1 {
@@ -1581,7 +1581,7 @@ body {
 }
 /* ===== Footer Page ===== */
 .footerl {
-  background-color: var(--darkblue);
+  background-color: var(--homebackground);
   margin: 0px 0 -100px 0;
   padding: 20px 20px 20px 20px;
   color: rgba(248, 248, 255, 0.748);
@@ -1595,7 +1595,7 @@ body {
 }
 
 #bar-c {
-  width: 95%;
+  width: 100%;
   animation: 2s ease-out slideInLeftc;
 }
 
@@ -1609,7 +1609,7 @@ body {
 }
 
 #bar-s {
-  width: 90%;
+  width: 100%;
   animation: 2s ease-out slideInLefts;
 }
 
