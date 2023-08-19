@@ -9,15 +9,16 @@
   --bodybackground1d: #7b7980;
   --profileborder: #072D44;
   --ghostwhite: rgb(221, 221, 230);
+  --contactinputbackgroundd: rgb(189, 189, 197); 
   --darkdarkblue: rgb(25, 36, 63);
   --darkgray: rgb(108, 105, 105);
   --bodybackground2d: #6c625c;
   --lightdarkgray: rgb(162, 162, 162);
   --projectborder: #474853;
   --barcolor: #5790AB;
-  --barcolord: ;
+  --barcolord: #42697c;
   --barborder: #5790AB;
-  --barborderd: ;
+  --barborderd: #42697c;
   --projectbordershadow: #6c6d77;
   --barfont: #072D44: 
 }
@@ -458,7 +459,7 @@ body {
     background-color: black;
     width: 50%;
     text-align: center;
-    color: var(--lightdarkgray);
+    color: var(--contactinputbackgroundd);
   }
   /* ===== Contact Page ===== */
   .contactl h1 {
@@ -530,8 +531,8 @@ body {
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    background-color: var(--ghostwhite);
-  }
+    background-color: var(--contactinputbackgroundd);
+  } 
   .contact2d input[type=name1] {
     width: 150px;
   }
@@ -546,7 +547,7 @@ body {
     padding: 10px;
   }
   .contact2d textarea {
-    background-color: var(--ghostwhite);
+    background-color: var(--contactinputbackgroundd);
   }
   /* ===== Footer Page ===== */
   .footerl {
@@ -981,7 +982,7 @@ body {
   background-color: black;
   width: 50%;
   text-align: center;
-  color: var(--lightdarkgray);
+  color: var(--contactinputbackgroundd);
 }
 /* ===== Contact Page ===== */
 .contactl h1 {
@@ -1041,7 +1042,7 @@ body {
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  background-color: var(--ghostwhite);
+  background-color: var(--contactinputbackgroundd);
 }
 .contact2d input[type=name1] {
   width: 150px;
@@ -1057,7 +1058,7 @@ body {
   padding: 10px;
 }
 .contact2d textarea {
-  background-color: var(--ghostwhite);
+  background-color: var(--contactinputbackgroundd);
 }
 /* ===== Footer Page ===== */
 .footerl {
@@ -1502,7 +1503,7 @@ body {
   background-color: black;
   width: 50%;
   text-align: center;
-  color: var(--lightdarkgray);
+  color: var(--contactinputbackgroundd);
 }
 /* ===== Contact Page ===== */
 .contactl h1 {
@@ -1562,7 +1563,7 @@ body {
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  background-color: var(--ghostwhite);
+  background-color: var(--contactinputbackgroundd);
 }
 .contact2d input[type=name1] {
   width: 150px;
@@ -1577,7 +1578,7 @@ body {
   border-radius: 15px;
   padding: 10px;
   width: 80%;
-  background-color: var(--ghostwhite);
+  background-color: var(--contactinputbackgroundd);
 }
 /* ===== Footer Page ===== */
 .footerl {
