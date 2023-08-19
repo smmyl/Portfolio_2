@@ -6,12 +6,16 @@
   --darkblue: #5790AB;
   --darkvanilla: #edf0f4;
   --coffee: #072D44;
-  --darktanshadow: rgb(180, 165, 146);
+  --darktanshadow: #6c6d77;
   --ghostwhite: rgb(221, 221, 230);
   --darkdarkblue: rgb(25, 36, 63);
   --darkgray: rgb(108, 105, 105);
   --darkgrayblue: rgb(53, 56, 66);
   --lightdarkgray: rgb(162, 162, 162);
+  --projectborder: #474853;
+  --barcolor: #5790AB;
+  --barborder: #5790AB;
+  --barfont: #072D44: 
 }
 
 body {
@@ -241,12 +245,15 @@ body {
   
   /* ===== Project Page ===== */
   .projectl {
+    z-index: 0;
+    position: relative;
     margin-top: -10px;
     background-color: rgb(207, 207, 213);
     padding: 100px 100px 100px 100px;
     border-radius: 15px;
     width: 75%;
     margin-left: 5.5%;
+    box-shadow: 0px 0px 5px 5px var(--shadow)
   }
   .projectd {
     margin-top: -10px;
@@ -254,6 +261,7 @@ body {
     background-color: var(--darkgrayblue);
     border-radius: 15px;
     width: 75%;
+    box-shadow: 0px 0px 5px 5px var(--shadow)
   }
   .projectl h1 {
     text-align: center;
@@ -276,7 +284,7 @@ body {
     width: 100%;
     height: auto;
     margin: 40px 0 50px 0;
-    border: 2px solid var(--darkblue);
+    border: 3px solid var(--projectborder);
     border-radius: 15px;
   }
   .project1-img1l {
@@ -302,7 +310,7 @@ body {
     left: 0;
     width: 100%;
     background-color: var(--darkvanilla);
-    border: 2px solid var(--darkblue);
+    border: 3px solid var(--projectborder);
     border-radius: 15px;
     opacity: 0;
     transition: 1s ease;
@@ -428,16 +436,16 @@ body {
     width: 80%;
     height: 1em;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid var(--barborder);
     margin-left: 70px;
   }
   .barl {
     height: 1em;
     border-radius: 10px;
-    background-color: black;
+    background-color: var(--barcolor);
     width: 50%;
     text-align: center;
-    color: tan;
+    color: var(--barfont);
   }
   .bard {
     height: 1em;
@@ -538,14 +546,18 @@ body {
   }
   /* ===== Footer Page ===== */
   .footerl {
+    z-index: 0;
+    position: relative;
     background-color: var(--darkblue);
-    margin: -5px 0 -100px 0;
+    margin: 5px 0 -100px 0;
     padding: 25px 20px 20px 20px;
     color: rgba(248, 248, 255, 0.748);
   }
   .footerd {
+    z-index: 0;
+    position: relative;
     background-color: var(--darkdarkblue);
-    margin: -5px 0 -100px 0;
+    margin: 5px 0 -100px 0;
     padding: 25px 20px 20px 20px;
     color: rgba(248, 248, 255, 0.748);
   }
@@ -767,12 +779,18 @@ body {
 
 /* ===== Project Page ===== */
 .projectl {
+  z-index: 0;
+  position: relative;
   background-color: rgb(207, 207, 213);
   padding: 100px 100px 100px 100px;
+  box-shadow: 0px 0px 5px 5px var(--shadow)
 }
 .projectd {
+  z-index: 0;
+  position: relative;
   padding: 100px 100px 100px 100px;
   background-color: var(--darkgrayblue);
+  box-shadow: 0px 0px 5px 5px var(--shadow)
 }
 .projectl h1 {
   text-align: center;
@@ -795,7 +813,7 @@ body {
   width: 100%;
   height: auto;
   margin: 40px 0 50px 0;
-  border: 2px solid var(--darkblue);
+  border: 3px solid var(--projectborder);
   border-radius: 15px;
 }
 .project1-img1l {
@@ -821,7 +839,7 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--darkvanilla);
-  border: 2px solid var(--darkblue);
+  border: 3px solid var(--projectborder);
   border-radius: 15px;
   opacity: 0;
   transition: 1s ease;
@@ -943,16 +961,16 @@ body {
   width: 80%;
   height: 1em;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid var(--barborder);
   margin-left: 70px;
 }
 .barl {
   height: 1em;
   border-radius: 10px;
-  background-color: black;
+  background-color: var(--barcolor);
   width: 50%;
   text-align: center;
-  color: tan;
+  color: var(--barfont);
 }
 .bard {
   height: 1em;
@@ -1274,15 +1292,21 @@ body {
 
 /* ===== Project Page ===== */
 .projectl {
+  z-index: 0;
+  position: relative;
   background-color: rgb(207, 207, 213);
   padding: 80px 40px 100px 40px;
+  box-shadow: 0px 0px 5px 5px var(--shadow)
 }
 .projectl h1 {
   text-align: center;
 }
 .projectd {
+  z-index: 0;
+  position: relative;
   padding: 80px 40px 100px 40px;
   background-color: var(--darkgrayblue);
+  box-shadow: 0px 0px 5px 5px var(--shadow)
 }
 .projectd h1 {
   text-align: center;
@@ -1301,7 +1325,7 @@ body {
   width: 100%;
   height: auto;
   margin: 40px 0 50px 0;
-  border: 2px solid var(--darkblue);
+  border: 3px solid var(--projectborder);
   border-radius: 15px;
 }
 .project1-img1l {
@@ -1327,7 +1351,7 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--darkvanilla);
-  border: 2px solid var(--darkblue);
+  border: 3px solid var(--projectborder);
   border-radius: 15px;
   opacity: 0;
   transition: 1s ease;
@@ -1459,17 +1483,17 @@ body {
   width: 80%;
   height: 1em;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid var(--barborder);
   margin-left: 50px;
 }
 
 .barl {
   height: 1em;
   border-radius: 10px;
-  background-color: black;
+  background-color: var(--barcolor);
   width: 50%;
   text-align: center;
-  color: tan;
+  color: var(--barfont);
 }
 .bard {
   height: 1em;
@@ -1486,6 +1510,7 @@ body {
 .contactl {
   padding: 50px 20px 20px 20px;
   background-color: var(--darkvanilla);
+  box-shadow: 0px 0px 5px 5px var(--shadow);
 }
 .contactd h1 {
   text-align: center;
@@ -1494,6 +1519,7 @@ body {
 .contactd {
   padding: 50px 20px 20px 20px;
   background-color: var(--darkgrayblue);
+  box-shadow: 0px 0px 5px 5px var(--shadow);
 }
 .contact1 {
   font-family: 'Open Sans', sans-serif;
@@ -1559,14 +1585,12 @@ body {
   margin: 0px 0 -100px 0;
   padding: 20px 20px 20px 20px;
   color: rgba(248, 248, 255, 0.748);
-  box-shadow: 0px 0px 5px 5px var(--shadow);
 }
 .footerd {
   background-color: var(--darkdarkblue);
   margin: 0px 0 -100px 0;
   padding: 20px 20px 20px 20px;
   color: rgba(248, 248, 255, 0.748);
-  box-shadow: 0px 0px 5px 5px var(--shadow);
 }
 }
 
