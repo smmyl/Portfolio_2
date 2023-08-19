@@ -4,16 +4,20 @@
 :root {
   --shadow: rgba(0, 0, 0, 0.212);
   --homebackground: #5790AB;
+  --homebackgroundd: #42697c;
   --bodybackground1: #edf0f4;
+  --bodybackground1d: #7b7980;
   --profileborder: #072D44;
   --ghostwhite: rgb(221, 221, 230);
   --darkdarkblue: rgb(25, 36, 63);
   --darkgray: rgb(108, 105, 105);
-  --darkgrayblue: rgb(53, 56, 66);
+  --bodybackground2d: #6c625c;
   --lightdarkgray: rgb(162, 162, 162);
   --projectborder: #474853;
   --barcolor: #5790AB;
+  --barcolord: ;
   --barborder: #5790AB;
+  --barborderd: ;
   --projectbordershadow: #6c6d77;
   --barfont: #072D44: 
 }
@@ -44,7 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px 0px 60px 0px;
-    background-color: var(--darkdarkblue);
+    background-color: var(--homebackgroundd);
     box-shadow: 0px 0px 5px 5px var(--shadow);
     position: relative;
     height: 200px;
@@ -69,7 +73,6 @@ body {
   .home1-1d h1 {
     position: absolute;
     font-size: 3em;
-    color: var(--lightdarkgray);
     position: absolute;
     left: 50px;
     width: 20%;
@@ -223,7 +226,7 @@ body {
   .home2d {
     margin-top: -5px;
     padding: 100px 100px 40px 100px;
-    background-color: var(--darkgray);
+    background-color: var(--bodybackground1d);
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     border-radius: 15px;
@@ -258,9 +261,10 @@ body {
   .projectd {
     margin-top: -10px;
     padding: 100px 100px 100px 100px;
-    background-color: var(--darkgrayblue);
+    background-color: var(--bodybackground2d);
     border-radius: 15px;
     width: 75%;
+    margin-left: 5.5%;
     box-shadow: 0px 0px 5px 5px var(--shadow)
   }
   .projectl h1 {
@@ -270,7 +274,6 @@ body {
   .projectd h1 {
     text-align: center;
     padding-bottom: 20px;
-    color: var(--lightdarkgray)
   }
   .container {
     position: relative;
@@ -295,9 +298,11 @@ body {
   }
   .project1-img1d {
     box-shadow: -4px 3px 2px 1px var(--darkdarkblue);
+    filter: brightness(80%);
   }
   .project1-img2d {
     box-shadow: 4px 3px 2px 1px var(--darkdarkblue);
+    filter: brightness(80%);
   }
   .container:hover {
     cursor: pointer;
@@ -327,7 +332,7 @@ body {
     left: 0;
     width: 100%;
     background-color: var(--homebackground);
-    border: 2px solid var(--darkgrayblue);
+    border: 2px solid var(--bodybackground2d);
     border-radius: 15px;
     opacity: 0;
     transition: 1s ease;
@@ -461,7 +466,6 @@ body {
   }
   .contactd h1 {
     text-align: center;
-    color: var(--lightdarkgray)
   }
   .contactl {
     margin-top: -5px;
@@ -477,7 +481,7 @@ body {
   .contactd {
     margin-top: -5px;
     padding: 50px 20px 20px 20px;
-    background-color: var(--darkgrayblue);
+    background-color: var(--bodybackground2d);
     box-shadow: 0px 0px 5px 5px var(--shadow);
     border-radius: 15px;
     width: 86%;
@@ -556,10 +560,9 @@ body {
   .footerd {
     z-index: 0;
     position: relative;
-    background-color: var(--darkdarkblue);
+    background-color: var(--homebackgroundd);
     margin: 5px 0 -100px 0;
     padding: 25px 20px 20px 20px;
-    color: rgba(248, 248, 255, 0.748);
   }
 
   }
@@ -585,7 +588,7 @@ body {
   margin: auto;
   margin: 0px 0px 0px 0px;
   padding: 10px 0px 40px 0px;
-  background-color: var(--darkdarkblue);
+  background-color: var(--homebackgroundd);
   box-shadow: 0px 0px 5px 5px var(--shadow);
   width: 100%;
   position: relative;
@@ -611,7 +614,6 @@ body {
 .home1-1d h1 {
   position: absolute;
   font-size: 3em;
-  color: var(--lightdarkgray);
   position: absolute;
   left: 50px;
   width: 20%;
@@ -760,7 +762,7 @@ body {
 }
 .home2d {
   padding: 100px 100px 40px 100px;
-  background-color: var(--darkgray);
+  background-color: var(--bodybackground1d);
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
@@ -789,7 +791,7 @@ body {
   z-index: 0;
   position: relative;
   padding: 100px 100px 100px 100px;
-  background-color: var(--darkgrayblue);
+  background-color: var(--bodybackground2d);
   box-shadow: 0px 0px 5px 5px var(--shadow)
 }
 .projectl h1 {
@@ -799,7 +801,6 @@ body {
 .projectd h1 {
   text-align: center;
   padding-bottom: 20px;
-  color: var(--lightdarkgray)
 }
 .container {
   position: relative;
@@ -824,9 +825,11 @@ body {
 }
 .project1-img1d {
   box-shadow: -4px 3px 2px 1px var(--darkdarkblue);
+  filter: brightness(80%);
 }
 .project1-img2d {
   box-shadow: 4px 3px 2px 1px var(--darkdarkblue);
+  filter: brightness(80%);
 }
 .container:hover {
   cursor: pointer;
@@ -856,7 +859,7 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--homebackground);
-  border: 2px solid var(--darkgrayblue);
+  border: 2px solid var(--bodybackground2d);
   border-radius: 15px;
   opacity: 0;
   transition: 1s ease;
@@ -986,7 +989,6 @@ body {
 }
 .contactd h1 {
   text-align: center;
-  color: var(--lightdarkgray)
 }
 .contactl {
   padding: 50px 20px 20px 20px;
@@ -995,7 +997,7 @@ body {
 }
 .contactd {
   padding: 50px 20px 20px 20px;
-  background-color: var(--darkgrayblue);
+  background-color: var(--bodybackground2d);
   box-shadow: 0px 0px 5px 5px var(--shadow);
 }
 .contact1 {
@@ -1065,10 +1067,9 @@ body {
   color: rgba(248, 248, 255, 0.748);
 }
 .footerd {
-  background-color: var(--darkdarkblue);
+  background-color: var(--homebackgroundd);
   margin: 0px 0 -100px 0;
   padding: 20px 20px 20px 20px;
-  color: rgba(248, 248, 255, 0.748);
 }
 
 }
@@ -1125,7 +1126,7 @@ body {
   margin: auto;
   margin: 0px 0px 0px 0px;
   padding: 10px 0px 40px 0px;
-  background-color: var(--darkdarkblue);
+  background-color: var(--homebackgroundd);
   box-shadow: 0px 0px 5px 5px var(--shadow);
   width: 100%;
   position: relative;
@@ -1153,7 +1154,6 @@ body {
 }
 .home1-1d h1 {
   font-size: 3em;
-  color: var(--lightdarkgray);
 }
 .home1-1d img {
   position: relative;
@@ -1305,13 +1305,12 @@ body {
   z-index: 0;
   position: relative;
   padding: 80px 40px 100px 40px;
-  background-color: var(--darkgrayblue);
+  background-color: var(--bodybackground2d);
   box-shadow: 0px 0px 5px 5px var(--shadow)
 }
 .projectd h1 {
   text-align: center;
   padding-bottom: 10px;
-  color: var(--lightdarkgray)
 }
 .container {
   position: relative;
@@ -1336,9 +1335,11 @@ body {
 }
 .project1-img1d {
   box-shadow: -4px 3px 2px 1px var(--darkdarkblue);
+  filter: brightness(80%);
 }
 .project1-img2d {
   box-shadow: 4px 3px 2px 1px var(--darkdarkblue);
+  filter: brightness(80%);
 }
 .container:hover {
   cursor: pointer;
@@ -1514,11 +1515,10 @@ body {
 }
 .contactd h1 {
   text-align: center;
-  color: var(--lightdarkgray)
 }
 .contactd {
   padding: 50px 20px 20px 20px;
-  background-color: var(--darkgrayblue);
+  background-color: var(--bodybackground2d);
   box-shadow: 0px 0px 5px 5px var(--shadow);
 }
 .contact1 {
@@ -1587,10 +1587,9 @@ body {
   color: rgba(248, 248, 255, 0.748);
 }
 .footerd {
-  background-color: var(--darkdarkblue);
+  background-color: var(--homebackgroundd);
   margin: 0px 0 -100px 0;
   padding: 20px 20px 20px 20px;
-  color: rgba(248, 248, 255, 0.748);
 }
 }
 
