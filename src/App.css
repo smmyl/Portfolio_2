@@ -3,9 +3,9 @@
 
 :root {
   --shadow: rgba(0, 0, 0, 0.212);
-  --darkblue: rgb(46, 62, 100);
-  --darkvanilla: rgb(209,193,155);
-  --coffee: rgb(100,84,46);
+  --darkblue: #5790AB;
+  --darkvanilla: #edf0f4;
+  --coffee: #072D44;
   --darktanshadow: rgb(180, 165, 146);
   --ghostwhite: rgb(221, 221, 230);
   --darkdarkblue: rgb(25, 36, 63);
@@ -21,7 +21,7 @@ body {
 @media (min-width: 1201px) {
   /* ===== All Pages ===== */
   body {
-    background-color: rgb(34, 36, 42);
+    background-color: white;
   }
   .page {
     margin: auto;
