@@ -29,11 +29,14 @@ body {
 }
 @media (min-width: 1201px) {
   /* ===== All Pages ===== */
-  body {
-    background-color: white;
-  }
   .page {
     margin: auto;
+  }
+  .body {
+    background-color: white;
+  }
+  .bodyd {
+    background-color: rgb(65, 64, 69);
   }
   /* ===== Home Page ===== */
   .home1l {
@@ -180,6 +183,15 @@ body {
   #home-line {
     position: absolute;
     background-color: rgba(248, 248, 255, 0.51);
+    height: 10px;
+    width: 168%;
+    right: -20%;
+    bottom: 60px;
+    border-radius: 15px;
+  }
+  #home-lined {
+    position: absolute;
+    background-color: black;
     height: 10px;
     width: 168%;
     right: -20%;
@@ -721,6 +733,15 @@ body {
 #home-line {
   position: absolute;
   background-color: rgba(248, 248, 255, 0.51);
+  height: 10px;
+  width: 168%;
+  right: -20%;
+  bottom: 60px;
+  border-radius: 15px;
+}
+#home-lined {
+  position: absolute;
+  background-color: black;
   height: 10px;
   width: 168%;
   right: -20%;

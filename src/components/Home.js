@@ -40,7 +40,7 @@ const Home = (props) => {
                         </div>
                         <div class='home1-2-2'>
                             <img onClick={handleScrollHome} id='home-img-1' src='https://i.imgur.com/oCrGeWig.jpg'/>
-                            <div id='home-line'>
+                            <div id={props.mode ? ('home-line'):('home-lined')}>
                             </div>
                         </div>
                         <div class='home1-2-3'>
