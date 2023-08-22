@@ -59,7 +59,7 @@ const Project = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div class={project2 ? 'project2' : 'project2-2'}>
+                    {/* <div class={project2 ? 'project2' : 'project2-2'}>
                         {project2h1 ? (
                             <h1 onClick={toggleProject2h1}>
                                 click for more...
@@ -85,7 +85,7 @@ const Project = (props) => {
                             </div>
                             </>
                         )}
-                    </div> 
+                    </div>  */}
                 </div>
             </div>
         </>
