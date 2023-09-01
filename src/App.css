@@ -133,7 +133,7 @@ body {
     position: relative;
   }
   .home-img-links {
-    width: 50%;
+    width: 35%;
     margin: auto;
   }
   #github {
@@ -148,7 +148,7 @@ body {
   } 
   #linkedin {
     position: absolute;
-    width: 40%;
+    width: 30%;
     top: 15px;
     animation: bounce1 10s infinite;
   }
@@ -160,8 +160,8 @@ body {
   } 
   #mail {
     position: absolute;
-    width: 45%;
-    right: 150%;
+    width: 35%;
+    right: 160%;
     top: 5px;
     animation: bounce3 10s infinite;
   }
@@ -172,7 +172,7 @@ body {
   }
   #resume {
     position: absolute;
-    width: 45%;
+    width: 35%;
     animation: bounce4 10s infinite;
   }
   #resumep {
@@ -265,19 +265,19 @@ body {
     position: relative;
     margin-top: -10px;
     background-color: rgb(207, 207, 213);
-    padding: 100px 100px 100px 100px;
+    padding: 50px 20px 20px 20px;
     border-radius: 15px;
-    width: 75%;
-    margin-left: 5.5%;
+    width: 86%;
+    margin-left: 5.75%;
     box-shadow: 0px 0px 5px 5px var(--shadow)
   }
   .projectd {
     margin-top: -10px;
-    padding: 100px 100px 100px 100px;
+    padding: 50px 20px 20px 20px;
     background-color: var(--bodybackground2d);
     border-radius: 15px;
-    width: 75%;
-    margin-left: 5.5%;
+    width: 86%;
+    margin-left: 5.75%;
     box-shadow: 0px 0px 5px 5px var(--shadow)
   }
   .projectl h1 {
@@ -290,7 +290,7 @@ body {
   }
   .container {
     position: relative;
-    width: 70%;
+    width: 50%;
   }
   #container-right {
     left: 28%;
@@ -302,6 +302,7 @@ body {
     margin: 40px 0 50px 0;
     border: 3px solid var(--projectborder);
     border-radius: 15px;
+    margin-left: 20%;
   }
   .project1-img1l {
     box-shadow: -4px 3px 2px 1px var(--projectbordershadow);
@@ -332,6 +333,7 @@ body {
     border-radius: 15px;
     opacity: 0;
     transition: 1s ease;
+    margin-left: 20%;
   }
   .overlay1l li {
     text-align: left;
@@ -349,6 +351,7 @@ body {
     border-radius: 15px;
     opacity: 0;
     transition: 1s ease;
+    margin-left: 20%;
   }
   .overlay1d li {
     text-align: left;
@@ -450,11 +453,18 @@ body {
   .skill2 {
     margin: 0px 80px 0px 60px;
   }
-  .bar-border {
+  .bar-borderl {
     width: 80%;
     height: 1em;
     border-radius: 10px;
     border: 2px solid var(--barborder);
+    margin-left: 70px;
+  }
+  .bar-borderd {
+    width: 80%;
+    height: 1em;
+    border-radius: 10px;
+    border: 2px solid black;
     margin-left: 70px;
   }
   .barl {
@@ -982,11 +992,18 @@ body {
 .skill2 {
   margin: 0px 80px 0px 60px;
 }
-.bar-border {
+.bar-borderl {
   width: 80%;
   height: 1em;
   border-radius: 10px;
   border: 2px solid var(--barborder);
+  margin-left: 70px;
+}
+.bar-borderd {
+  width: 80%;
+  height: 1em;
+  border-radius: 10px;
+  border: 2px solid black;
   margin-left: 70px;
 }
 .barl {
@@ -1500,12 +1517,19 @@ body {
 .skill1-img:hover .skill1-h3{
   opacity: 1;
 }
-.bar-border {
+.bar-borderl {
   width: 80%;
   height: 1em;
   border-radius: 10px;
   border: 2px solid var(--barborder);
   margin-left: 50px;
+}
+.bar-borderd {
+  width: 80%;
+  height: 1em;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-left: 70px;
 }
 
 .barl {

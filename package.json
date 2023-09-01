@@ -1,6 +1,10 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-sammyliao",
   "version": "0.1.0",
+  "engines": {
+    "node": "20.5.1",
+    "npm": "10.0"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -36,10 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.15",
-    "postcss": "^8.4.28",
-    "tailwindcss": "^3.3.3"
   }
 }
