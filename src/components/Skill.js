@@ -54,15 +54,15 @@ const Skill = (props) => {
                     </div>
                     <div class='skill2'>
                         <h2>Communications</h2>
-                            <div class = 'bar-border'>
+                            <div class = {props.mode ? ('bar-borderl'):('bar-borderd')}>
                                 <div class = {props.mode ? ("barl"):('bard')} id = 'bar-c'>100%</div>
                             </div>
                         <h2>Problem Solving</h2>
-                            <div class = 'bar-border'>
+                            <div class = {props.mode ? ('bar-borderl'):('bar-borderd')}>
                                 <div class = {props.mode ? ("barl"):('bard')} id = 'bar-s'>100%</div>
                             </div>
                         <h2>Teamwork</h2>
-                            <div class = 'bar-border'>
+                            <div class = {props.mode ? ('bar-borderl'):('bar-borderd')}>
                                 <div class = {props.mode ? ("barl"):('bard')} id = 'bar-t'>100%</div>
                             </div> 
                     </div>
