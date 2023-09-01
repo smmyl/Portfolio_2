@@ -1,8 +1,9 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-sammyliao",
   "version": "0.1.0",
   "engines": {
-    "node": "18.x"
+    "node": "20.5.1",
+    "npm": "10.0"
   },
   "private": true,
   "dependencies": {
